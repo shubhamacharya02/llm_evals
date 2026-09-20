@@ -1,0 +1,2589 @@
+[
+  {
+    "id": "TC_001",
+    "query": "Can the company reimburse me for buying a standing desk or ergonomic chair for my home setup?",
+    "category": "Paraphrased Query",
+    "difficulty": "Medium",
+    "chapter": "Chapter 5 (Page 15)",
+    "expected_chunks": [
+      "5.4 Remote Workstation & Ergonomic Standards\nRemote employees must maintain a dedicated, secure workspace with high-speed internet (minimum 100 Mbps download / 20 Mbps upload). A one-time home office setup reimbursement of up to $1,000 is available for desks, ergonomic chairs, and external monitors."
+    ],
+    "ground_truth_answer": "Yes, remote employees are eligible for a one-time home office setup reimbursement of up to $1,000 for desks, ergonomic chairs, and external monitors.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 5 (Contd.): HYBRID & REMOTE WORK REGULATIONS\n5.3 Hybrid Work Model Guidelines\nEligible employees may work remotely up to 3 days per week and are required in-office\n2 days per week (typically Tuesdays and Thursdays for team sprint plannings and\ndemos). Fully remote arrangements require explicit approval from the Executive\nCommittee.\n5.4 Remote Workstation & Ergonomic Standards\nRemote employees must maintain a dedicated, secure workspace with high-speed internet\n(minimum 100 Mbps download / 20 Mbps upload). A one-time home office setup\nreimbursement of up to $1,000 is available for desks, ergonomic chairs, and external\nmonitors.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 15 of 50",
+        "metadata": {
+          "producer": "",
+          "page": 14,
+          "total_pages": 50,
+          "author": "",
+          "moddate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "modDate": "",
+          "title": "",
+          "trapped": "",
+          "subject": "",
+          "creator": "",
+          "creationDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "creationdate": ""
+        },
+        "score": 1.2485711574554443
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "trapped": "",
+          "subject": "",
+          "creator": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "total_pages": 50,
+          "moddate": "",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "author": "",
+          "title": "",
+          "modDate": "",
+          "keywords": "",
+          "page": 27
+        },
+        "score": 1.292948842048645
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "subject": "",
+          "trapped": "",
+          "author": "",
+          "creationdate": "",
+          "page": 40,
+          "producer": "",
+          "creator": "",
+          "creationDate": "",
+          "title": "",
+          "format": "PDF 1.7",
+          "keywords": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.3277571201324463
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_002",
+    "query": "How many days off do I get if I have worked at Nexa for 4 years, and what is the maximum number of unused days I can accrue?",
+    "category": "Tenure-Based Calculation",
+    "difficulty": "Medium",
+    "chapter": "Chapter 10 (Page 33)",
+    "expected_chunks": [
+      "10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u2022 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u2022 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u2022 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)"
+    ],
+    "ground_truth_answer": "Employees with 3 to 5 years of continuous tenure accrue 25 days of paid vacation per year (2.08 days/month), subject to a maximum accrual cap of 37.5 days.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "author": "",
+          "title": "",
+          "moddate": "",
+          "creationDate": "",
+          "trapped": "",
+          "page": 32,
+          "creationdate": "",
+          "total_pages": 50,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "format": "PDF 1.7",
+          "producer": "",
+          "keywords": "",
+          "subject": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": ""
+        },
+        "score": 0.5750703811645508
+      },
+      {
+        "content": "CHAPTER 10 (Contd.): SABBATICAL & VOLUNTEER TIME OFF\n10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are\nentitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual\nPTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval.\n10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in\nnon-profit community initiatives and charitable events.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 36 of 50",
+        "metadata": {
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "creator": "",
+          "total_pages": 50,
+          "producer": "",
+          "moddate": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "creationdate": "",
+          "trapped": "",
+          "page": 35,
+          "title": "",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "modDate": ""
+        },
+        "score": 0.8064514994621277
+      },
+      {
+        "content": "CHAPTER 15 (Contd.): FINAL SETTLEMENT, SEVERANCE & COBRA\n15.3 Return of Company Assets\nAll laptops, monitors, corporate credit cards, security fobs, and confidential files\nmust be surrendered to IT on or before the final working day.\n15.4 Final Paycheck and Accrued PTO Settlement\nFinal wages and accrued, unused vacation balance are disbursed within 10 business\ndays following the last day of employment in accordance with regional statutory wage\npayment regulations.\n15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14\ndays of termination, allowing medical coverage continuation for up to 18 months at\ngroup rates.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 49 of 50",
+        "metadata": {
+          "author": "",
+          "total_pages": 50,
+          "title": "",
+          "modDate": "",
+          "producer": "",
+          "keywords": "",
+          "subject": "",
+          "page": 48,
+          "creator": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "trapped": ""
+        },
+        "score": 0.8372735977172852
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_003",
+    "query": "If I take primary caregiver parental leave and then use the phased return program, how does my schedule and pay work during those first few weeks back?",
+    "category": "Multi-Hop / Cross-Section",
+    "difficulty": "Hard",
+    "chapter": "Chapter 11 (Page 37)",
+    "expected_chunks": [
+      "11.1 Parental Leave (Maternity, Paternity & Adoption)\nNexa provides industry-leading paid parental leave for new parents following birth, adoption, or foster placement:\n\u2022 Primary Caregivers: 16 weeks of 100% base salary paid leave.\n\u2022 Secondary Caregivers: 8 weeks of 100% base salary paid leave.",
+      "11.2 Phased Return-to-Work Program\nNew parents may work an 80% part-time schedule (4 days/week) at 100% pay for the first 4 weeks following return from parental leave."
+    ],
+    "ground_truth_answer": "Primary caregivers receive 16 weeks of 100% paid parental leave. Upon returning, the phased return-to-work program allows working an 80% part-time schedule (4 days/week) at 100% full pay for the first 4 weeks.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 11: PARENTAL & CAREGIVER LEAVES\n11.1 Parental Leave (Maternity, Paternity & Adoption)\nNexa provides industry-leading paid parental leave for new parents following birth,\nadoption, or foster placement:\n\u00b7 Primary Caregivers: 16 weeks of 100% base salary paid leave.\n\u00b7 Secondary Caregivers: 8 weeks of 100% base salary paid leave.\nParental leave must be taken within 12 months of the qualifying event.\n11.2 Phased Return-to-Work Program\nNew parents may work an 80% part-time schedule (4 days/week) at 100% pay for the\nfirst 4 weeks following return from parental leave.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 37 of 50",
+        "metadata": {
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "title": "",
+          "creator": "",
+          "keywords": "",
+          "producer": "",
+          "modDate": "",
+          "trapped": "",
+          "moddate": "",
+          "page": 36,
+          "creationdate": "",
+          "subject": "",
+          "total_pages": 50,
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": ""
+        },
+        "score": 0.7627353668212891
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): FAMILY AND MEDICAL LEAVE ACT (FMLA)\n11.3 FMLA Leave Eligibility & Entitlement\nEmployees with at least 12 months of service and 1,250 hours worked in the previous\n12-month period are eligible for up to 12 weeks of job-protected, unpaid leave under\nthe Family and Medical Leave Act (FMLA) for serious personal health conditions or\nfamily care.\n11.4 Health Benefits Maintenance During FMLA\nGroup health benefits are maintained during FMLA leave under the same conditions as\nif the employee had continued working.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 38 of 50",
+        "metadata": {
+          "moddate": "",
+          "total_pages": 50,
+          "modDate": "",
+          "author": "",
+          "title": "",
+          "page": 37,
+          "keywords": "",
+          "creationDate": "",
+          "creator": "",
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "format": "PDF 1.7",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "subject": ""
+        },
+        "score": 1.145607352256775
+      },
+      {
+        "content": "CHAPTER 10 (Contd.): SICK LEAVE & PERSONAL TIME\n10.3 Paid Sick Leave Allocation\nEmployees receive 10 paid sick days on January 1st of each calendar year (prorated\nfor new hires). Sick leave covers personal illness, medical appointments, and caring\nfor an immediate family member.\n10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences\nextending beyond 3 consecutive working days.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 34 of 50",
+        "metadata": {
+          "moddate": "",
+          "subject": "",
+          "title": "",
+          "trapped": "",
+          "producer": "",
+          "author": "",
+          "page": 33,
+          "creator": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "keywords": "",
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "creationDate": "",
+          "format": "PDF 1.7"
+        },
+        "score": 1.1795257329940796
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_004",
+    "query": "I am an engineering lead planning to resign. How much advance written notice am I contractually required to give?",
+    "category": "Role-Specific Threshold",
+    "difficulty": "Medium",
+    "chapter": "Chapter 15 (Page 48)",
+    "expected_chunks": [
+      "15.1 Voluntary Resignation Notice Periods\nEmployees resigning voluntarily must provide advance written notice to their reporting manager and HR:\n\u2022 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.\n\u2022 Managers, Directors, and Executive Staff: Minimum 60 calendar days notice."
+    ],
+    "ground_truth_answer": "Managers, leads, directors, and executive staff are required to provide a minimum of 60 calendar days advance written notice upon voluntary resignation (compared to 30 calendar days for individual contributors).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 15: SEPARATION OF EMPLOYMENT & EXIT\n15.1 Voluntary Resignation Notice Periods\nEmployees resigning voluntarily must provide advance written notice to their\nreporting manager and HR:\n\u00b7 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.\n\u00b7 Managers, Directors, and Executive Staff: Minimum 60 calendar days notice.\n15.2 Exit Interview & Knowledge Transfer\nDeparting employees complete a confidential exit interview with People Operations and\na structured knowledge transfer document to ensure uninterrupted team operations.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 48 of 50",
+        "metadata": {
+          "keywords": "",
+          "total_pages": 50,
+          "author": "",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "format": "PDF 1.7",
+          "producer": "",
+          "moddate": "",
+          "modDate": "",
+          "title": "",
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "creator": "",
+          "page": 47
+        },
+        "score": 0.8543977737426758
+      },
+      {
+        "content": "Page 43\nChapter 14: Workplace Safety, Health & Environment (EHS)\nPage 46\nChapter 15: Separation of Employment, Resignation & Severance\nPage 48\nAppendix: Summary Table of Key Policy Limits & HR Directory\nPage 50\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 2 of 50",
+        "metadata": {
+          "moddate": "",
+          "subject": "",
+          "author": "",
+          "producer": "",
+          "creationDate": "",
+          "title": "",
+          "keywords": "",
+          "creator": "",
+          "page": 1,
+          "modDate": "",
+          "format": "PDF 1.7",
+          "trapped": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.30143141746521
+      },
+      {
+        "content": "APPENDIX: QUICK REFERENCE LIMITS & HR DIRECTORY\nKey Policy Thresholds Summary Table\n\u00b7 Vacation Accrual: 20 days/yr (0-2 yrs tenure), 25 days/yr (3-5 yrs), 30 days/yr (6+\nyrs)\n\u00b7 401(k) Employer Match: 100% match on first 5% of base salary (Immediate 100%\nvesting)\n\u00b7 Parental Leave: 16 weeks fully paid (Primary Caregiver), 8 weeks (Secondary\nCaregiver)\n\u00b7 Learning & Development Budget: $1,500/yr per full-time employee\n\u00b7 Monthly Wellness Stipend: $100/month ($1,200/yr)\n\u00b7 Meal Travel Per Diem: $75/day domestic, $100/day international\n\u00b7 Resignation Notice: 30 days (ICs), 60 days (Managers/Directors)\nEmergency & Human Resources Contact Directory\n\u00b7 People Operations General: people@nexacorp.internal | Extension 4001\n\u00b7 Benefits & Healthcare Support: benefits@nexacorp.internal | Extension 4002\n\u00b7 Payroll & Tax Team: payroll@nexacorp.internal | Extension 4003\n\u00b7 Ethics & Compliance Hotline: 1-800-555-NEXA | ethics@nexacorp.internal",
+        "metadata": {
+          "creator": "",
+          "producer": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "subject": "",
+          "moddate": "",
+          "page": 49,
+          "creationDate": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "keywords": "",
+          "total_pages": 50,
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.3179798126220703
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_005",
+    "query": "What is the maximum daily meal allowance for an international business trip, and can I book business class on a 7-hour flight?",
+    "category": "Multi-Hop / Travel Rules",
+    "difficulty": "Hard",
+    "chapter": "Chapter 12 (Page 40-41)",
+    "expected_chunks": [
+      "12.2 Air Travel Cabin Class Rules\n\u2022 Domestic Flights & International < 6 Hours: Standard Economy Class.\n\u2022 International Flights > 6 Hours: Premium Economy.\n\u2022 International Flights > 10 Hours: Business Class (requires VP level sign-off).",
+      "12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international). Itemized receipts are required for all individual meal expenses exceeding $25."
+    ],
+    "ground_truth_answer": "The daily meal allowance for international business travel is up to $100/day. For an international flight of 7 hours, you are eligible for Premium Economy (Business Class is only permitted for flights exceeding 10 hours with VP approval).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 12: TRAVEL & EXPENSE REIMBURSEMENT\n12.1 Business Travel Authorization\nAll corporate travel must be pre-approved by the department director. Bookings must\nbe made via Navan (TripActions) at least 14 days in advance for domestic travel and\n21 days for international travel.\n12.2 Air Travel Cabin Class Rules\n\u00b7 Domestic Flights & International < 6 Hours: Standard Economy Class.\n\u00b7 International Flights > 6 Hours: Premium Economy.\n\u00b7 International Flights > 10 Hours: Business Class (requires VP level sign-off).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 40 of 50",
+        "metadata": {
+          "page": 39,
+          "creator": "",
+          "subject": "",
+          "total_pages": 50,
+          "modDate": "",
+          "moddate": "",
+          "keywords": "",
+          "producer": "",
+          "author": "",
+          "title": "",
+          "creationdate": "",
+          "trapped": "",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": ""
+        },
+        "score": 1.0503382682800293
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "subject": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "creationdate": "",
+          "title": "",
+          "author": "",
+          "creationDate": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "trapped": "",
+          "moddate": "",
+          "page": 40,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "producer": ""
+        },
+        "score": 1.1551464796066284
+      },
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "title": "",
+          "subject": "",
+          "keywords": "",
+          "creator": "",
+          "page": 32,
+          "modDate": "",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "moddate": "",
+          "author": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": ""
+        },
+        "score": 1.3676058053970337
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_006",
+    "query": "What are the core hours when all employees must be online and reachable on Slack?",
+    "category": "Paraphrased Query",
+    "difficulty": "Easy",
+    "chapter": "Chapter 5 (Page 14)",
+    "expected_chunks": [
+      "5.2 Core Collaboration Hours\nTo facilitate cross-functional teamwork, all remote and in-office employees must be accessible on Slack and Google Workspace during Core Collaboration Hours: 10:00 AM to 4:00 PM in their respective home time zone."
+    ],
+    "ground_truth_answer": "All remote and in-office employees must be accessible on Slack and Google Workspace during Core Collaboration Hours: 10:00 AM to 4:00 PM in their respective home time zone.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 5: WORK SCHEDULES & COLLABORATION HOURS\n5.1 Standard Working Hours\nThe standard operational working schedule is 40 hours per week, Monday through\nFriday, 9:00 AM to 6:00 PM local time, with a mandatory 60-minute unpaid lunch break\nand two 15-minute paid rest intervals.\n5.2 Core Collaboration Hours\nTo facilitate cross-functional teamwork, all remote and in-office employees must be\naccessible on Slack and Google Workspace during Core Collaboration Hours: 10:00 AM to\n4:00 PM in their respective home time zone.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 14 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "title": "",
+          "author": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "trapped": "",
+          "subject": "",
+          "creationdate": "",
+          "creator": "",
+          "keywords": "",
+          "creationDate": "",
+          "page": 13,
+          "format": "PDF 1.7"
+        },
+        "score": 0.6138458251953125
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "page": 4,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "author": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "trapped": "",
+          "creationdate": "",
+          "subject": "",
+          "creator": "",
+          "keywords": "",
+          "title": "",
+          "modDate": "",
+          "moddate": ""
+        },
+        "score": 0.9471988081932068
+      },
+      {
+        "content": "CHAPTER 5 (Contd.): TIMEKEEPING & OVERTIME ADMINISTRATION\n5.7 Accurate Time Tracking for Non-Exempt Staff\nNon-exempt employees must accurately clock in and clock out for all shifts and lunch\nperiods using the digital timekeeping system. Working off the clock is strictly\nprohibited.\n5.8 Overtime Pre-Approval & Rates\nAll overtime for non-exempt staff must be pre-approved in writing by the department\nmanager. Overtime is paid at 1.5 times the regular hourly rate for hours worked in\nexcess of 40 hours per workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 17 of 50",
+        "metadata": {
+          "producer": "",
+          "subject": "",
+          "keywords": "",
+          "creationdate": "",
+          "title": "",
+          "trapped": "",
+          "page": 16,
+          "author": "",
+          "creationDate": "",
+          "modDate": "",
+          "creator": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "format": "PDF 1.7",
+          "moddate": ""
+        },
+        "score": 1.0010120868682861
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_007",
+    "query": "Can I use company money for a gym membership or mental health counseling app?",
+    "category": "Paraphrased Query",
+    "difficulty": "Medium",
+    "chapter": "Chapter 8 (Page 28)",
+    "expected_chunks": [
+      "8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via Expensify for gym memberships, fitness tracking hardware, yoga classes, or meditation subscriptions (Headspace, Calm)."
+    ],
+    "ground_truth_answer": "Yes, employees receive a monthly tax-free wellness stipend of $100 per month ($1,200/year) via Expensify for gym memberships, fitness hardware, yoga, or meditation/mental health subscriptions like Headspace and Calm.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "creationdate": "",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "keywords": "",
+          "modDate": "",
+          "author": "",
+          "title": "",
+          "creator": "",
+          "moddate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "producer": "",
+          "trapped": "",
+          "page": 27,
+          "total_pages": 50
+        },
+        "score": 0.913001298904419
+      },
+      {
+        "content": "TABLE OF CONTENTS\nChapter 1: Welcome, Mission & Core Values\nPage 3\nChapter 2: Employment Classifications & Probationary Period\nPage 5\nChapter 3: Equal Opportunity & Anti-Harassment Policy\nPage 8\nChapter 4: Standards of Conduct, Ethics & Conflict of Interest\nPage 11\nChapter 5: Work Schedules, Hybrid Model & Timekeeping\nPage 14\nChapter 6: Compensation, Payroll & Overtime Administration\nPage 18\nChapter 7: Performance Management, Reviews & Promotions\nPage 22\nChapter 8: Comprehensive Health & Welfare Benefits\nPage 26\nChapter 9: 401(k) Retirement Savings & Wealth Building\nPage 30\nChapter 10: Paid Time Off (PTO), Holidays & Sabbaticals\nPage 33\nChapter 11: Family, Medical & Statutory Leaves of Absence\nPage 37\nChapter 12: Business Travel, Meals & Expense Reimbursement\nPage 40\nChapter 13: Information Security, Acceptable IT Use & BYOD\nPage 43\nChapter 14: Workplace Safety, Health & Environment (EHS)\nPage 46\nChapter 15: Separation of Employment, Resignation & Severance\nPage 48",
+        "metadata": {
+          "author": "",
+          "keywords": "",
+          "trapped": "",
+          "moddate": "",
+          "title": "",
+          "creationDate": "",
+          "producer": "",
+          "creationdate": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "creator": "",
+          "modDate": "",
+          "subject": "",
+          "page": 1,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.3671040534973145
+      },
+      {
+        "content": "CHAPTER 13: IT ASSETS, PASSWORDS & SECURITY\n13.1 Corporate Hardware Allocation\nAll employees are issued standardized hardware (16-inch Apple MacBook Pro M3 or Dell\nXPS 15). Hardware is refreshed on a 3-year lifecycle. Installing unauthorized\nsoftware or jailbreaking company devices is strictly prohibited.\n13.2 Password Policy & Multi-Factor Authentication (MFA)\nPassphrases must be at least 16 characters in length. MFA via hardware security keys\n(YubiKey) or Okta Verify is mandatory on all accounts.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 43 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "author": "",
+          "keywords": "",
+          "subject": "",
+          "creationdate": "",
+          "page": 42,
+          "moddate": "",
+          "trapped": "",
+          "total_pages": 50,
+          "modDate": "",
+          "creationDate": ""
+        },
+        "score": 1.4252502918243408
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.8333,
+      "mrr": 1.0,
+      "f1_score": 0.9091,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_008",
+    "query": "How many days of unexplained absence triggers automatic termination due to job abandonment?",
+    "category": "Compliance / Disciplinary",
+    "difficulty": "Easy",
+    "chapter": "Chapter 5 (Page 16)",
+    "expected_chunks": [
+      "5.6 Job Abandonment Policy\nThree (3) consecutive business days of absence without notification or contact with management constitutes voluntary resignation due to job abandonment."
+    ],
+    "ground_truth_answer": "Three (3) consecutive business days of absence without notification or contact with management constitutes voluntary resignation due to job abandonment.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 5 (Contd.): ATTENDANCE & PUNCTUALITY\n5.5 Attendance Expectations & Notice of Absence\nPunctuality and consistent attendance are essential. If an employee is unable to\nreport to work due to sudden illness or emergency, they must notify their manager and\nlog an unplanned absence in the HR portal no later than 8:30 AM on the day of\nabsence.\n5.6 Job Abandonment Policy\nThree (3) consecutive business days of absence without notification or contact with\nmanagement constitutes voluntary resignation due to job abandonment.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 16 of 50",
+        "metadata": {
+          "creationDate": "",
+          "creator": "",
+          "modDate": "",
+          "author": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "page": 15,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "creationdate": "",
+          "producer": "",
+          "trapped": "",
+          "subject": "",
+          "moddate": "",
+          "title": ""
+        },
+        "score": 0.7589160799980164
+      },
+      {
+        "content": "CHAPTER 15: SEPARATION OF EMPLOYMENT & EXIT\n15.1 Voluntary Resignation Notice Periods\nEmployees resigning voluntarily must provide advance written notice to their\nreporting manager and HR:\n\u00b7 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.\n\u00b7 Managers, Directors, and Executive Staff: Minimum 60 calendar days notice.\n15.2 Exit Interview & Knowledge Transfer\nDeparting employees complete a confidential exit interview with People Operations and\na structured knowledge transfer document to ensure uninterrupted team operations.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 48 of 50",
+        "metadata": {
+          "trapped": "",
+          "producer": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "page": 47,
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "creator": "",
+          "subject": "",
+          "modDate": "",
+          "creationDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "moddate": "",
+          "author": ""
+        },
+        "score": 1.0918779373168945
+      },
+      {
+        "content": "CHAPTER 10 (Contd.): SICK LEAVE & PERSONAL TIME\n10.3 Paid Sick Leave Allocation\nEmployees receive 10 paid sick days on January 1st of each calendar year (prorated\nfor new hires). Sick leave covers personal illness, medical appointments, and caring\nfor an immediate family member.\n10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences\nextending beyond 3 consecutive working days.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 34 of 50",
+        "metadata": {
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "subject": "",
+          "producer": "",
+          "moddate": "",
+          "modDate": "",
+          "title": "",
+          "keywords": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "creator": "",
+          "trapped": "",
+          "creationDate": "",
+          "page": 33,
+          "author": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.1458933353424072
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_009",
+    "query": "How long must I work at the company to qualify for a paid sabbatical, and how long does the sabbatical last?",
+    "category": "Eligibility & Duration",
+    "difficulty": "Medium",
+    "chapter": "Chapter 10 (Page 36)",
+    "expected_chunks": [
+      "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual PTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval."
+    ],
+    "ground_truth_answer": "Employees qualify after completing five (5) consecutive years of full-time service. The sabbatical is a 4-week fully paid leave in addition to standard PTO, requiring 6 months advance notice and VP approval.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 10 (Contd.): SABBATICAL & VOLUNTEER TIME OFF\n10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are\nentitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual\nPTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval.\n10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in\nnon-profit community initiatives and charitable events.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 36 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "format": "PDF 1.7",
+          "modDate": "",
+          "subject": "",
+          "creationdate": "",
+          "title": "",
+          "page": 35,
+          "producer": "",
+          "creationDate": "",
+          "author": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "keywords": "",
+          "moddate": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 0.8955605030059814
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "producer": "",
+          "creator": "",
+          "keywords": "",
+          "trapped": "",
+          "creationDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "author": "",
+          "creationdate": "",
+          "moddate": "",
+          "title": "",
+          "subject": "",
+          "format": "PDF 1.7",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "page": 4
+        },
+        "score": 1.1345219612121582
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): FAMILY AND MEDICAL LEAVE ACT (FMLA)\n11.3 FMLA Leave Eligibility & Entitlement\nEmployees with at least 12 months of service and 1,250 hours worked in the previous\n12-month period are eligible for up to 12 weeks of job-protected, unpaid leave under\nthe Family and Medical Leave Act (FMLA) for serious personal health conditions or\nfamily care.\n11.4 Health Benefits Maintenance During FMLA\nGroup health benefits are maintained during FMLA leave under the same conditions as\nif the employee had continued working.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 38 of 50",
+        "metadata": {
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "trapped": "",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "format": "PDF 1.7",
+          "keywords": "",
+          "author": "",
+          "modDate": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "page": 37,
+          "title": "",
+          "creationDate": ""
+        },
+        "score": 1.1617529392242432
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_010",
+    "query": "When is an employee required to provide a formal doctor note or medical certificate for illness?",
+    "category": "Ambiguity / Distractor",
+    "difficulty": "Hard",
+    "chapter": "Chapter 10 (Page 34)",
+    "expected_chunks": [
+      "10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences extending beyond 3 consecutive working days."
+    ],
+    "ground_truth_answer": "A formal doctor note or medical certificate is required for sick leave absences that extend beyond three (3) consecutive working days.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 10 (Contd.): SICK LEAVE & PERSONAL TIME\n10.3 Paid Sick Leave Allocation\nEmployees receive 10 paid sick days on January 1st of each calendar year (prorated\nfor new hires). Sick leave covers personal illness, medical appointments, and caring\nfor an immediate family member.\n10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences\nextending beyond 3 consecutive working days.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 34 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "moddate": "",
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "keywords": "",
+          "page": 33,
+          "format": "PDF 1.7",
+          "title": "",
+          "creator": "",
+          "creationdate": "",
+          "trapped": "",
+          "creationDate": "",
+          "total_pages": 50,
+          "producer": ""
+        },
+        "score": 1.0449132919311523
+      },
+      {
+        "content": "TABLE OF CONTENTS\nChapter 1: Welcome, Mission & Core Values\nPage 3\nChapter 2: Employment Classifications & Probationary Period\nPage 5\nChapter 3: Equal Opportunity & Anti-Harassment Policy\nPage 8\nChapter 4: Standards of Conduct, Ethics & Conflict of Interest\nPage 11\nChapter 5: Work Schedules, Hybrid Model & Timekeeping\nPage 14\nChapter 6: Compensation, Payroll & Overtime Administration\nPage 18\nChapter 7: Performance Management, Reviews & Promotions\nPage 22\nChapter 8: Comprehensive Health & Welfare Benefits\nPage 26\nChapter 9: 401(k) Retirement Savings & Wealth Building\nPage 30\nChapter 10: Paid Time Off (PTO), Holidays & Sabbaticals\nPage 33\nChapter 11: Family, Medical & Statutory Leaves of Absence\nPage 37\nChapter 12: Business Travel, Meals & Expense Reimbursement\nPage 40\nChapter 13: Information Security, Acceptable IT Use & BYOD\nPage 43\nChapter 14: Workplace Safety, Health & Environment (EHS)\nPage 46\nChapter 15: Separation of Employment, Resignation & Severance\nPage 48",
+        "metadata": {
+          "creator": "",
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "keywords": "",
+          "author": "",
+          "creationDate": "",
+          "page": 1,
+          "creationdate": "",
+          "moddate": "",
+          "title": "",
+          "total_pages": 50,
+          "modDate": "",
+          "producer": "",
+          "format": "PDF 1.7"
+        },
+        "score": 1.2644611597061157
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): FAMILY AND MEDICAL LEAVE ACT (FMLA)\n11.3 FMLA Leave Eligibility & Entitlement\nEmployees with at least 12 months of service and 1,250 hours worked in the previous\n12-month period are eligible for up to 12 weeks of job-protected, unpaid leave under\nthe Family and Medical Leave Act (FMLA) for serious personal health conditions or\nfamily care.\n11.4 Health Benefits Maintenance During FMLA\nGroup health benefits are maintained during FMLA leave under the same conditions as\nif the employee had continued working.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 38 of 50",
+        "metadata": {
+          "producer": "",
+          "total_pages": 50,
+          "keywords": "",
+          "subject": "",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "modDate": "",
+          "author": "",
+          "creationdate": "",
+          "creator": "",
+          "moddate": "",
+          "creationDate": "",
+          "page": 37
+        },
+        "score": 1.3239392042160034
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.8333,
+      "mrr": 1.0,
+      "f1_score": 0.9091,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_011",
+    "query": "Can an employee accept a $75 dinner or gift basket from a vendor?",
+    "category": "Ethics & Thresholds",
+    "difficulty": "Hard",
+    "chapter": "Chapter 4 (Page 12)",
+    "expected_chunks": [
+      "4.3 Gifts and Business Courtesies Policy\nEmployees may not accept gifts, gratuities, entertainment, or travel from clients or vendors exceeding $100 in aggregate annual value. Any gift exceeding $50 must be reported to the Legal Compliance department within 5 business days."
+    ],
+    "ground_truth_answer": "Gifts cannot exceed $100 in aggregate annual value. Because the gift ($75) exceeds $50, it must be reported to the Legal Compliance department within 5 business days.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 4 (Contd.): GIFTS, ENTERTAINMENT & ANTI-CORRUPTION\n4.3 Gifts and Business Courtesies Policy\nEmployees may not accept gifts, gratuities, entertainment, or travel from clients or\nvendors exceeding $100 in aggregate annual value. Any gift exceeding $50 must be\nreported to the Legal Compliance department within 5 business days.\n4.4 Anti-Bribery & FCPA Compliance\nNexa complies fully with the US Foreign Corrupt Practices Act (FCPA) and UK Bribery\nAct. Bribes, kickbacks, or facilitation payments to public officials or commercial\npartners are strictly forbidden under penalty of immediate termination and criminal\nprosecution.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 12 of 50",
+        "metadata": {
+          "modDate": "",
+          "title": "",
+          "creationDate": "",
+          "page": 11,
+          "moddate": "",
+          "creationdate": "",
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "total_pages": 50,
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "author": "",
+          "creator": "",
+          "keywords": ""
+        },
+        "score": 1.2510156631469727
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "creator": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "subject": "",
+          "total_pages": 50,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "producer": "",
+          "moddate": "",
+          "author": "",
+          "creationdate": "",
+          "modDate": "",
+          "trapped": "",
+          "page": 40,
+          "keywords": "",
+          "creationDate": ""
+        },
+        "score": 1.343562364578247
+      },
+      {
+        "content": "CHAPTER 6 (Contd.): INCENTIVE COMPENSATION & BONUSES\n6.7 Annual Discretionary Performance Bonuses\nEligible full-time employees participate in the Annual Bonus Plan with target bonuses\nranging from 10% to 30% of base salary depending on job grade. Bonus payouts are\nweighted: 60% individual OKR achievement and 40% overall corporate EBITDA targets.\n6.8 Spot Bonus Program\nManagers may award peer recognition Spot Bonuses ranging from $250 to $2,500 for\nexceptional project delivery or cross-team contributions.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 21 of 50",
+        "metadata": {
+          "page": 20,
+          "subject": "",
+          "trapped": "",
+          "creationDate": "",
+          "moddate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "keywords": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "creator": "",
+          "total_pages": 50,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "producer": "",
+          "author": ""
+        },
+        "score": 1.482029676437378
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_012",
+    "query": "What is the standard vesting schedule for Restricted Stock Units (RSUs)?",
+    "category": "Equity / Compensation",
+    "difficulty": "Medium",
+    "chapter": "Chapter 9 (Page 32)",
+    "expected_chunks": [
+      "9.5 Restricted Stock Units (RSUs) & Equity Grants\nNew hire and annual refresher equity grants are awarded in Restricted Stock Units (RSUs) under the 2024 Equity Incentive Plan. Standard vesting schedule follows a 4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the remaining 36 months."
+    ],
+    "ground_truth_answer": "Standard RSU vesting follows a 4-year schedule with a 25% cliff at 12 months (1 year), followed by 6.25% quarterly vesting over the remaining 36 months.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 9 (Contd.): EQUITY INCENTIVE PLAN (RSUs & ESPP)\n9.5 Restricted Stock Units (RSUs) & Equity Grants\nNew hire and annual refresher equity grants are awarded in Restricted Stock Units\n(RSUs) under the 2024 Equity Incentive Plan. Standard vesting schedule follows a\n4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the\nremaining 36 months.\n9.6 Employee Stock Purchase Plan (ESPP)\nEmployees can contribute up to 15% of net salary to purchase company common stock at\na 15% discount to the lower of the offering date or purchase date market value in\n6-month offering periods.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 32 of 50",
+        "metadata": {
+          "keywords": "",
+          "creator": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "format": "PDF 1.7",
+          "trapped": "",
+          "author": "",
+          "modDate": "",
+          "total_pages": 50,
+          "page": 31,
+          "subject": "",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "creationdate": "",
+          "creationDate": ""
+        },
+        "score": 0.726610541343689
+      },
+      {
+        "content": "CHAPTER 9 (Contd.): 401(k) VESTING & INVESTMENT OPTIONS\n9.3 Immediate 100% Vesting Schedule\nBoth employee elective deferrals and all employer matching contributions are 100%\nimmediately vested with zero forfeiture holding period.\n9.4 Investment Options & Roth 401(k)\nParticipants can select from target-date retirement funds, broad-market index funds,\nand self-directed brokerage windows. Both Pre-tax and Roth 401(k) post-tax\ncontribution mechanisms are supported up to IRS annual statutory limits ($23,500 in\n2026).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 31 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "keywords": "",
+          "title": "",
+          "trapped": "",
+          "creationDate": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "creationdate": "",
+          "author": "",
+          "modDate": "",
+          "page": 30,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "moddate": ""
+        },
+        "score": 1.1506075859069824
+      },
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "title": "",
+          "keywords": "",
+          "subject": "",
+          "author": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "page": 32,
+          "creationdate": "",
+          "producer": "",
+          "total_pages": 50,
+          "creationDate": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": ""
+        },
+        "score": 1.244351863861084
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_013",
+    "query": "What happens if an employee fails to meet milestones by the end of a Performance Improvement Plan (PIP)?",
+    "category": "Performance Management",
+    "difficulty": "Medium",
+    "chapter": "Chapter 7 (Page 24)",
+    "expected_chunks": [
+      "7.6 Failure to Meet PIP Deliverables\nFailure to successfully achieve the stated milestones by the conclusion of the PIP timeframe results in immediate termination of employment."
+    ],
+    "ground_truth_answer": "Failure to achieve stated milestones by the conclusion of the PIP timeframe results in immediate termination of employment.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 7 (Contd.): PERFORMANCE IMPROVEMENT PLANS (PIP)\n7.5 Performance Improvement Plan (PIP) Guidelines\nEmployees whose performance drops below acceptable standards are placed on a formal\n30-day, 60-day, or 90-day Performance Improvement Plan. The PIP outlines measurable\ntargets, required deliverables, and bi-weekly milestone checkpoints.\n7.6 Failure to Meet PIP Deliverables\nFailure to successfully achieve the stated milestones by the conclusion of the PIP\ntimeframe results in immediate termination of employment.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 24 of 50",
+        "metadata": {
+          "modDate": "",
+          "keywords": "",
+          "creator": "",
+          "page": 23,
+          "subject": "",
+          "trapped": "",
+          "author": "",
+          "format": "PDF 1.7",
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "title": "",
+          "creationDate": "",
+          "producer": ""
+        },
+        "score": 0.581560492515564
+      },
+      {
+        "content": "CHAPTER 7 (Contd.): 360-DEGREE ANNUAL PERFORMANCE REVIEW\n7.3 360-Degree Evaluation Framework\nAnnual reviews incorporate comprehensive 360-degree feedback from reporting managers,\ndirect reports, and minimum 3 peer reviewers. Performance ratings utilize a 5-tier\nscale:\n1 - Unsatisfactory | 2 - Developing | 3 - Meets Expectations | 4 - Exceeds\nExpectations | 5 - Outstanding Leader\n7.4 Calibration Committees\nDepartment heads conduct calibration sessions to eliminate scoring bias and maintain\nobjective rating distribution across teams.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 23 of 50",
+        "metadata": {
+          "subject": "",
+          "title": "",
+          "creator": "",
+          "moddate": "",
+          "keywords": "",
+          "creationDate": "",
+          "creationdate": "",
+          "author": "",
+          "modDate": "",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "format": "PDF 1.7",
+          "page": 22,
+          "trapped": ""
+        },
+        "score": 1.27931547164917
+      },
+      {
+        "content": "CHAPTER 7: PERFORMANCE MANAGEMENT & GOALS\n7.1 Objectives and Key Results (OKRs)\nNexa utilizes quarterly Objectives and Key Results (OKRs) to align individual\npriorities with company strategic goals. OKRs are finalized in the first two weeks of\neach calendar quarter in collaboration with reporting managers.\n7.2 Continuous Feedback & 1-on-1 Check-ins\nManagers are required to conduct bi-weekly 1-on-1 coaching meetings with every direct\nreport to discuss project milestones, blockers, and professional growth.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 22 of 50",
+        "metadata": {
+          "page": 21,
+          "modDate": "",
+          "total_pages": 50,
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "moddate": "",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "creationdate": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "author": "",
+          "subject": "",
+          "title": ""
+        },
+        "score": 1.3103584051132202
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.8333,
+      "mrr": 1.0,
+      "f1_score": 0.9091,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_014",
+    "query": "What is the pet insurance policy or reimbursement for bringing dogs to the office?",
+    "category": "Negative / Out-of-Scope",
+    "difficulty": "Hard",
+    "chapter": "Out of Scope",
+    "expected_chunks": [],
+    "ground_truth_answer": "The Nexa employee handbook does not cover pet insurance or pets in the office.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 12 (Contd.): EXPENSE REPORTING & AUDIT PROTOCOLS\n12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage\nrates (67 cents/mile in 2026), plus tolls and parking.\n12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip\nconclusion. Late submissions beyond 30 days are subject to forfeiture of\nreimbursement.\n12.7 Non-Reimbursable Expenses\nAirline seat upgrade fees, flight change penalties due to personal reasons, hotel\nminibar items, traffic citations, and spa services are non-reimbursable.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 42 of 50",
+        "metadata": {
+          "producer": "",
+          "keywords": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "subject": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "creationdate": "",
+          "page": 41,
+          "moddate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "total_pages": 50,
+          "title": "",
+          "trapped": "",
+          "creator": ""
+        },
+        "score": 1.2781081199645996
+      },
+      {
+        "content": "APPENDIX: QUICK REFERENCE LIMITS & HR DIRECTORY\nKey Policy Thresholds Summary Table\n\u00b7 Vacation Accrual: 20 days/yr (0-2 yrs tenure), 25 days/yr (3-5 yrs), 30 days/yr (6+\nyrs)\n\u00b7 401(k) Employer Match: 100% match on first 5% of base salary (Immediate 100%\nvesting)\n\u00b7 Parental Leave: 16 weeks fully paid (Primary Caregiver), 8 weeks (Secondary\nCaregiver)\n\u00b7 Learning & Development Budget: $1,500/yr per full-time employee\n\u00b7 Monthly Wellness Stipend: $100/month ($1,200/yr)\n\u00b7 Meal Travel Per Diem: $75/day domestic, $100/day international\n\u00b7 Resignation Notice: 30 days (ICs), 60 days (Managers/Directors)\nEmergency & Human Resources Contact Directory\n\u00b7 People Operations General: people@nexacorp.internal | Extension 4001\n\u00b7 Benefits & Healthcare Support: benefits@nexacorp.internal | Extension 4002\n\u00b7 Payroll & Tax Team: payroll@nexacorp.internal | Extension 4003\n\u00b7 Ethics & Compliance Hotline: 1-800-555-NEXA | ethics@nexacorp.internal",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "page": 49,
+          "subject": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "moddate": "",
+          "author": "",
+          "trapped": "",
+          "producer": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "keywords": "",
+          "modDate": ""
+        },
+        "score": 1.3083391189575195
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "author": "",
+          "subject": "",
+          "total_pages": 50,
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "page": 40,
+          "modDate": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "title": "",
+          "moddate": "",
+          "creationdate": "",
+          "keywords": ""
+        },
+        "score": 1.3370897769927979
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.0,
+      "mrr": 0.0,
+      "f1_score": 0.0,
+      "hit_at_1": false
+    }
+  },
+  {
+    "id": "TC_015",
+    "query": "How many days per week are hybrid employees required to come into the office, and which days are typical for sprint planning?",
+    "category": "Hybrid Work Schedules",
+    "difficulty": "Medium",
+    "chapter": "Chapter 5 (Page 15)",
+    "expected_chunks": [
+      "5.3 Hybrid Work Model Guidelines\nEligible employees may work remotely up to 3 days per week and are required in-office 2 days per week (typically Tuesdays and Thursdays for team sprint plannings and demos)."
+    ],
+    "ground_truth_answer": "Hybrid employees are required to be in-office 2 days per week (typically Tuesdays and Thursdays for sprint planning and demos) and may work remotely up to 3 days per week.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 5 (Contd.): HYBRID & REMOTE WORK REGULATIONS\n5.3 Hybrid Work Model Guidelines\nEligible employees may work remotely up to 3 days per week and are required in-office\n2 days per week (typically Tuesdays and Thursdays for team sprint plannings and\ndemos). Fully remote arrangements require explicit approval from the Executive\nCommittee.\n5.4 Remote Workstation & Ergonomic Standards\nRemote employees must maintain a dedicated, secure workspace with high-speed internet\n(minimum 100 Mbps download / 20 Mbps upload). A one-time home office setup\nreimbursement of up to $1,000 is available for desks, ergonomic chairs, and external\nmonitors.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 15 of 50",
+        "metadata": {
+          "author": "",
+          "format": "PDF 1.7",
+          "subject": "",
+          "creationDate": "",
+          "keywords": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "creator": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "moddate": "",
+          "title": "",
+          "page": 14,
+          "creationdate": "",
+          "modDate": "",
+          "total_pages": 50
+        },
+        "score": 0.7875654697418213
+      },
+      {
+        "content": "CHAPTER 5: WORK SCHEDULES & COLLABORATION HOURS\n5.1 Standard Working Hours\nThe standard operational working schedule is 40 hours per week, Monday through\nFriday, 9:00 AM to 6:00 PM local time, with a mandatory 60-minute unpaid lunch break\nand two 15-minute paid rest intervals.\n5.2 Core Collaboration Hours\nTo facilitate cross-functional teamwork, all remote and in-office employees must be\naccessible on Slack and Google Workspace during Core Collaboration Hours: 10:00 AM to\n4:00 PM in their respective home time zone.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 14 of 50",
+        "metadata": {
+          "modDate": "",
+          "trapped": "",
+          "moddate": "",
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "title": "",
+          "subject": "",
+          "format": "PDF 1.7",
+          "page": 13,
+          "total_pages": 50,
+          "keywords": "",
+          "author": ""
+        },
+        "score": 1.063528299331665
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "subject": "",
+          "total_pages": 50,
+          "trapped": "",
+          "producer": "",
+          "page": 4,
+          "creationdate": "",
+          "creator": "",
+          "modDate": "",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "format": "PDF 1.7",
+          "author": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": ""
+        },
+        "score": 1.1886522769927979
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_016",
+    "query": "How much does the company contribute to a Health Savings Account (HSA) for an employee enrolled in a family health plan?",
+    "category": "Healthcare & Benefits",
+    "difficulty": "Medium",
+    "chapter": "Chapter 8 (Page 26)",
+    "expected_chunks": [
+      "8.2 Health Savings Account (HSA) and FSA\nEmployees enrolled in High Deductible Health Plans (HDHP) receive a company HSA contribution of $1,000/year (individual) or $2,000/year (family). Healthcare FSA and Dependent Care FSA options are also provided."
+    ],
+    "ground_truth_answer": "Employees enrolled in High Deductible Health Plans (HDHP) receive an annual company HSA contribution of $2,000 for family coverage (or $1,000 for individual coverage).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 8: HEALTH, WELFARE & EMPLOYEE BENEFITS\n8.1 Medical, Dental & Vision Insurance Coverage\nNexa sponsors comprehensive health plans through leading national carriers (BlueCross\nBlueShield, Cigna, Delta Dental, VSP). The company pays 100% of employee monthly\npremiums and 80% of dependent premiums. Overall maximum lifetime coverage is\n$2,000,000.\n8.2 Health Savings Account (HSA) and FSA\nEmployees enrolled in High Deductible Health Plans (HDHP) receive a company HSA\ncontribution of $1,000/year (individual) or $2,000/year (family). Healthcare FSA and\nDependent Care FSA options are also provided.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 26 of 50",
+        "metadata": {
+          "format": "PDF 1.7",
+          "subject": "",
+          "author": "",
+          "title": "",
+          "producer": "",
+          "page": 25,
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "creator": "",
+          "moddate": "",
+          "modDate": "",
+          "total_pages": 50,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "keywords": ""
+        },
+        "score": 1.0270724296569824
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "keywords": "",
+          "page": 27,
+          "producer": "",
+          "format": "PDF 1.7",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "author": "",
+          "modDate": "",
+          "creationdate": "",
+          "trapped": "",
+          "title": "",
+          "subject": "",
+          "creator": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "moddate": ""
+        },
+        "score": 1.1094872951507568
+      },
+      {
+        "content": "TABLE OF CONTENTS\nChapter 1: Welcome, Mission & Core Values\nPage 3\nChapter 2: Employment Classifications & Probationary Period\nPage 5\nChapter 3: Equal Opportunity & Anti-Harassment Policy\nPage 8\nChapter 4: Standards of Conduct, Ethics & Conflict of Interest\nPage 11\nChapter 5: Work Schedules, Hybrid Model & Timekeeping\nPage 14\nChapter 6: Compensation, Payroll & Overtime Administration\nPage 18\nChapter 7: Performance Management, Reviews & Promotions\nPage 22\nChapter 8: Comprehensive Health & Welfare Benefits\nPage 26\nChapter 9: 401(k) Retirement Savings & Wealth Building\nPage 30\nChapter 10: Paid Time Off (PTO), Holidays & Sabbaticals\nPage 33\nChapter 11: Family, Medical & Statutory Leaves of Absence\nPage 37\nChapter 12: Business Travel, Meals & Expense Reimbursement\nPage 40\nChapter 13: Information Security, Acceptable IT Use & BYOD\nPage 43\nChapter 14: Workplace Safety, Health & Environment (EHS)\nPage 46\nChapter 15: Separation of Employment, Resignation & Severance\nPage 48",
+        "metadata": {
+          "trapped": "",
+          "creationDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "author": "",
+          "title": "",
+          "producer": "",
+          "modDate": "",
+          "keywords": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "subject": "",
+          "creator": "",
+          "page": 1
+        },
+        "score": 1.2238675355911255
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_017",
+    "query": "What discount do employees receive when buying company stock through the Employee Stock Purchase Plan (ESPP)?",
+    "category": "Stock & Equity",
+    "difficulty": "Easy",
+    "chapter": "Chapter 9 (Page 32)",
+    "expected_chunks": [
+      "9.6 Employee Stock Purchase Plan (ESPP)\nEmployees can contribute up to 15% of net salary to purchase company common stock at a 15% discount to the lower of the offering date or purchase date market value in 6-month offering periods."
+    ],
+    "ground_truth_answer": "Employees can purchase company common stock at a 15% discount to the lower of the offering date or purchase date market value, contributing up to 15% of net salary.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 9 (Contd.): EQUITY INCENTIVE PLAN (RSUs & ESPP)\n9.5 Restricted Stock Units (RSUs) & Equity Grants\nNew hire and annual refresher equity grants are awarded in Restricted Stock Units\n(RSUs) under the 2024 Equity Incentive Plan. Standard vesting schedule follows a\n4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the\nremaining 36 months.\n9.6 Employee Stock Purchase Plan (ESPP)\nEmployees can contribute up to 15% of net salary to purchase company common stock at\na 15% discount to the lower of the offering date or purchase date market value in\n6-month offering periods.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 32 of 50",
+        "metadata": {
+          "creationDate": "",
+          "creator": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "total_pages": 50,
+          "keywords": "",
+          "title": "",
+          "author": "",
+          "moddate": "",
+          "modDate": "",
+          "trapped": "",
+          "subject": "",
+          "page": 31,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": ""
+        },
+        "score": 0.7665436863899231
+      },
+      {
+        "content": "CHAPTER 6 (Contd.): INCENTIVE COMPENSATION & BONUSES\n6.7 Annual Discretionary Performance Bonuses\nEligible full-time employees participate in the Annual Bonus Plan with target bonuses\nranging from 10% to 30% of base salary depending on job grade. Bonus payouts are\nweighted: 60% individual OKR achievement and 40% overall corporate EBITDA targets.\n6.8 Spot Bonus Program\nManagers may award peer recognition Spot Bonuses ranging from $250 to $2,500 for\nexceptional project delivery or cross-team contributions.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 21 of 50",
+        "metadata": {
+          "keywords": "",
+          "moddate": "",
+          "title": "",
+          "trapped": "",
+          "author": "",
+          "creator": "",
+          "producer": "",
+          "creationdate": "",
+          "page": 20,
+          "subject": "",
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50
+        },
+        "score": 1.1581218242645264
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "keywords": "",
+          "subject": "",
+          "creationdate": "",
+          "title": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "modDate": "",
+          "creationDate": "",
+          "format": "PDF 1.7",
+          "author": "",
+          "page": 27,
+          "total_pages": 50,
+          "producer": "",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.2797372341156006
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_018",
+    "query": "How many free confidential mental health or counseling sessions does an employee get per year under the EAP?",
+    "category": "Wellness & Mental Health",
+    "difficulty": "Medium",
+    "chapter": "Chapter 8 (Page 28)",
+    "expected_chunks": [
+      "8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning services. Employees and immediate family receive up to 8 free counseling sessions per issue per year via Lyra Health."
+    ],
+    "ground_truth_answer": "Employees and their immediate family receive up to 8 free counseling sessions per issue per year through Lyra Health under the Employee Assistance Program (EAP).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "moddate": "",
+          "page": 27,
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "producer": "",
+          "format": "PDF 1.7",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "author": "",
+          "creationdate": "",
+          "creator": "",
+          "modDate": "",
+          "creationDate": "",
+          "total_pages": 50
+        },
+        "score": 0.5538781881332397
+      },
+      {
+        "content": "TABLE OF CONTENTS\nChapter 1: Welcome, Mission & Core Values\nPage 3\nChapter 2: Employment Classifications & Probationary Period\nPage 5\nChapter 3: Equal Opportunity & Anti-Harassment Policy\nPage 8\nChapter 4: Standards of Conduct, Ethics & Conflict of Interest\nPage 11\nChapter 5: Work Schedules, Hybrid Model & Timekeeping\nPage 14\nChapter 6: Compensation, Payroll & Overtime Administration\nPage 18\nChapter 7: Performance Management, Reviews & Promotions\nPage 22\nChapter 8: Comprehensive Health & Welfare Benefits\nPage 26\nChapter 9: 401(k) Retirement Savings & Wealth Building\nPage 30\nChapter 10: Paid Time Off (PTO), Holidays & Sabbaticals\nPage 33\nChapter 11: Family, Medical & Statutory Leaves of Absence\nPage 37\nChapter 12: Business Travel, Meals & Expense Reimbursement\nPage 40\nChapter 13: Information Security, Acceptable IT Use & BYOD\nPage 43\nChapter 14: Workplace Safety, Health & Environment (EHS)\nPage 46\nChapter 15: Separation of Employment, Resignation & Severance\nPage 48",
+        "metadata": {
+          "author": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "keywords": "",
+          "total_pages": 50,
+          "subject": "",
+          "page": 1,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "creationdate": "",
+          "moddate": "",
+          "modDate": "",
+          "creator": ""
+        },
+        "score": 1.0392471551895142
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): LEARNING & TUITION ASSISTANCE\n8.7 Professional Development Allowance\nEach regular full-time employee is allocated an annual Learning & Development budget\nof $1,500 for attending technical conferences, purchasing books, or completing\naccredited certifications (AWS, GCP, CISA, PMP).\n8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree\nprograms (Computer Science, MBA) can apply for up to $5,250 in annual tuition\nreimbursement with a 1-year post-completion retention commitment.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 29 of 50",
+        "metadata": {
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "creationdate": "",
+          "moddate": "",
+          "author": "",
+          "creator": "",
+          "page": 28,
+          "producer": "",
+          "keywords": "",
+          "title": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "total_pages": 50,
+          "modDate": ""
+        },
+        "score": 1.062625765800476
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.8333,
+      "mrr": 1.0,
+      "f1_score": 0.9091,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_019",
+    "query": "What are the rules and financial limits for graduate tuition reimbursement if I want to pursue a Master's degree?",
+    "category": "Tuition & Education",
+    "difficulty": "Hard",
+    "chapter": "Chapter 8 (Page 29)",
+    "expected_chunks": [
+      "8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree programs (Computer Science, MBA) can apply for up to $5,250 in annual tuition reimbursement with a 1-year post-completion retention commitment."
+    ],
+    "ground_truth_answer": "After 2 years of continuous tenure, employees pursuing a relevant Master's program (CS, MBA) can apply for up to $5,250 in annual tuition reimbursement, subject to a 1-year post-completion retention commitment.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 8 (Contd.): LEARNING & TUITION ASSISTANCE\n8.7 Professional Development Allowance\nEach regular full-time employee is allocated an annual Learning & Development budget\nof $1,500 for attending technical conferences, purchasing books, or completing\naccredited certifications (AWS, GCP, CISA, PMP).\n8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree\nprograms (Computer Science, MBA) can apply for up to $5,250 in annual tuition\nreimbursement with a 1-year post-completion retention commitment.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 29 of 50",
+        "metadata": {
+          "subject": "",
+          "moddate": "",
+          "trapped": "",
+          "page": 28,
+          "total_pages": 50,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "title": "",
+          "creator": "",
+          "producer": "",
+          "author": "",
+          "creationdate": "",
+          "keywords": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 0.9471003413200378
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "total_pages": 50,
+          "author": "",
+          "producer": "",
+          "creationdate": "",
+          "modDate": "",
+          "creator": "",
+          "keywords": "",
+          "title": "",
+          "creationDate": "",
+          "format": "PDF 1.7",
+          "page": 40,
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": ""
+        },
+        "score": 1.3275517225265503
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "subject": "",
+          "format": "PDF 1.7",
+          "page": 27,
+          "creationDate": "",
+          "producer": "",
+          "creationdate": "",
+          "trapped": "",
+          "moddate": "",
+          "author": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "modDate": "",
+          "creator": "",
+          "keywords": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.5125902891159058
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_020",
+    "query": "How many hours of paid Volunteer Time Off (VTO) can an employee take each year?",
+    "category": "Community & Leave",
+    "difficulty": "Easy",
+    "chapter": "Chapter 10 (Page 36)",
+    "expected_chunks": [
+      "10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in non-profit community initiatives and charitable events."
+    ],
+    "ground_truth_answer": "Nexa provides 16 hours (2 days) of paid Volunteer Time Off (VTO) per calendar year for non-profit and community initiatives.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 10 (Contd.): SABBATICAL & VOLUNTEER TIME OFF\n10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are\nentitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual\nPTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval.\n10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in\nnon-profit community initiatives and charitable events.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 36 of 50",
+        "metadata": {
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "producer": "",
+          "modDate": "",
+          "subject": "",
+          "creator": "",
+          "author": "",
+          "creationDate": "",
+          "page": 35,
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "trapped": "",
+          "total_pages": 50,
+          "title": ""
+        },
+        "score": 0.6294441819190979
+      },
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "creator": "",
+          "subject": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "creationDate": "",
+          "total_pages": 50,
+          "author": "",
+          "creationdate": "",
+          "page": 32,
+          "moddate": "",
+          "trapped": ""
+        },
+        "score": 0.9375185966491699
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "modDate": "",
+          "moddate": "",
+          "author": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "page": 4,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "title": "",
+          "trapped": "",
+          "creator": "",
+          "creationdate": ""
+        },
+        "score": 1.0704151391983032
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_021",
+    "query": "How long is my medical insurance coverage extended under COBRA after I leave the company?",
+    "category": "Separation & Benefits",
+    "difficulty": "Medium",
+    "chapter": "Chapter 15 (Page 49)",
+    "expected_chunks": [
+      "15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14 days of termination, allowing medical coverage continuation for up to 18 months at group rates."
+    ],
+    "ground_truth_answer": "Medical coverage can be continued under COBRA for up to 18 months at group rates following termination of employment.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 15 (Contd.): FINAL SETTLEMENT, SEVERANCE & COBRA\n15.3 Return of Company Assets\nAll laptops, monitors, corporate credit cards, security fobs, and confidential files\nmust be surrendered to IT on or before the final working day.\n15.4 Final Paycheck and Accrued PTO Settlement\nFinal wages and accrued, unused vacation balance are disbursed within 10 business\ndays following the last day of employment in accordance with regional statutory wage\npayment regulations.\n15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14\ndays of termination, allowing medical coverage continuation for up to 18 months at\ngroup rates.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 49 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "trapped": "",
+          "creationDate": "",
+          "modDate": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "author": "",
+          "keywords": "",
+          "page": 48,
+          "title": "",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "moddate": ""
+        },
+        "score": 0.7284137010574341
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): FAMILY AND MEDICAL LEAVE ACT (FMLA)\n11.3 FMLA Leave Eligibility & Entitlement\nEmployees with at least 12 months of service and 1,250 hours worked in the previous\n12-month period are eligible for up to 12 weeks of job-protected, unpaid leave under\nthe Family and Medical Leave Act (FMLA) for serious personal health conditions or\nfamily care.\n11.4 Health Benefits Maintenance During FMLA\nGroup health benefits are maintained during FMLA leave under the same conditions as\nif the employee had continued working.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 38 of 50",
+        "metadata": {
+          "title": "",
+          "page": 37,
+          "trapped": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "keywords": "",
+          "producer": "",
+          "creationdate": "",
+          "moddate": "",
+          "total_pages": 50,
+          "author": "",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": ""
+        },
+        "score": 1.1458817720413208
+      },
+      {
+        "content": "CHAPTER 8: HEALTH, WELFARE & EMPLOYEE BENEFITS\n8.1 Medical, Dental & Vision Insurance Coverage\nNexa sponsors comprehensive health plans through leading national carriers (BlueCross\nBlueShield, Cigna, Delta Dental, VSP). The company pays 100% of employee monthly\npremiums and 80% of dependent premiums. Overall maximum lifetime coverage is\n$2,000,000.\n8.2 Health Savings Account (HSA) and FSA\nEmployees enrolled in High Deductible Health Plans (HDHP) receive a company HSA\ncontribution of $1,000/year (individual) or $2,000/year (family). Healthcare FSA and\nDependent Care FSA options are also provided.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 26 of 50",
+        "metadata": {
+          "creator": "",
+          "creationdate": "",
+          "keywords": "",
+          "author": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "moddate": "",
+          "trapped": "",
+          "creationDate": "",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "total_pages": 50,
+          "subject": "",
+          "title": "",
+          "page": 25
+        },
+        "score": 1.166014313697815
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_022",
+    "query": "What is the standard mileage reimbursement rate if I use my personal car for business travel?",
+    "category": "Expense & Mileage",
+    "difficulty": "Easy",
+    "chapter": "Chapter 12 (Page 42)",
+    "expected_chunks": [
+      "12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage rates (67 cents/mile in 2026), plus tolls and parking."
+    ],
+    "ground_truth_answer": "Personal vehicle use for business travel is reimbursed at the IRS standard mileage rate of 67 cents per mile (plus tolls and parking).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 12 (Contd.): EXPENSE REPORTING & AUDIT PROTOCOLS\n12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage\nrates (67 cents/mile in 2026), plus tolls and parking.\n12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip\nconclusion. Late submissions beyond 30 days are subject to forfeiture of\nreimbursement.\n12.7 Non-Reimbursable Expenses\nAirline seat upgrade fees, flight change penalties due to personal reasons, hotel\nminibar items, traffic citations, and spa services are non-reimbursable.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 42 of 50",
+        "metadata": {
+          "keywords": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "page": 41,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "trapped": "",
+          "creationDate": "",
+          "author": "",
+          "subject": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "creationdate": "",
+          "moddate": "",
+          "modDate": ""
+        },
+        "score": 0.7237175107002258
+      },
+      {
+        "content": "CHAPTER 12 (Contd.): LODGING & PER DIEM POLICIES\n12.3 Hotel Lodging Nightly Ceilings\nStandard hotel nightly reimbursement ceilings:\n\u00b7 Tier 1 Cities (SF, NYC, London, Tokyo): Up to $300/night before taxes.\n\u00b7 Standard Metros: Up to $200/night before taxes.\n12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international).\nItemized receipts are required for all individual meal expenses exceeding $25.\nAlcohol is only reimbursable during approved client dinners.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 41 of 50",
+        "metadata": {
+          "format": "PDF 1.7",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "subject": "",
+          "modDate": "",
+          "title": "",
+          "total_pages": 50,
+          "moddate": "",
+          "author": "",
+          "page": 40,
+          "producer": "",
+          "keywords": "",
+          "creationDate": "",
+          "trapped": "",
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.2750262022018433
+      },
+      {
+        "content": "CHAPTER 12: TRAVEL & EXPENSE REIMBURSEMENT\n12.1 Business Travel Authorization\nAll corporate travel must be pre-approved by the department director. Bookings must\nbe made via Navan (TripActions) at least 14 days in advance for domestic travel and\n21 days for international travel.\n12.2 Air Travel Cabin Class Rules\n\u00b7 Domestic Flights & International < 6 Hours: Standard Economy Class.\n\u00b7 International Flights > 6 Hours: Premium Economy.\n\u00b7 International Flights > 10 Hours: Business Class (requires VP level sign-off).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 40 of 50",
+        "metadata": {
+          "trapped": "",
+          "total_pages": 50,
+          "page": 39,
+          "keywords": "",
+          "modDate": "",
+          "creator": "",
+          "title": "",
+          "author": "",
+          "creationDate": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": ""
+        },
+        "score": 1.2898321151733398
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_023",
+    "query": "What criteria must be met if a full-time employee wants to take on a freelance side project or moonlighting gig?",
+    "category": "Outside Employment / Moonlighting",
+    "difficulty": "Hard",
+    "chapter": "Chapter 4 (Page 13)",
+    "expected_chunks": [
+      "4.5 Outside Employment (Moonlighting) Rules\nFull-time employees may engage in secondary employment or freelance consulting only if it meets all the following criteria:\n\u2022 Does not interfere with job performance or primary work hours.\n\u2022 Does not utilize company hardware, software licenses, or confidential intellectual property.\n\u2022 Receives prior written approval from the VP of Engineering and People Operations."
+    ],
+    "ground_truth_answer": "Moonlighting is permitted only if it does not interfere with primary work/performance, does not use company hardware/software/IP, and receives prior written approval from the VP of Engineering and People Operations.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 4 (Contd.): OUTSIDE BUSINESS ENGAGEMENTS\n4.5 Outside Employment (Moonlighting) Rules\nFull-time employees may engage in secondary employment or freelance consulting only\nif it meets all the following criteria:\n\u00b7 Does not interfere with job performance or primary work hours.\n\u00b7 Does not utilize company hardware, software licenses, or confidential intellectual\nproperty.\n\u00b7 Receives prior written approval from the VP of Engineering and People Operations.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 13 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "subject": "",
+          "author": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "moddate": "",
+          "total_pages": 50,
+          "keywords": "",
+          "creationDate": "",
+          "page": 12,
+          "trapped": "",
+          "title": "",
+          "producer": ""
+        },
+        "score": 0.8287479877471924
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "modDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "creationdate": "",
+          "keywords": "",
+          "creationDate": "",
+          "author": "",
+          "title": "",
+          "producer": "",
+          "trapped": "",
+          "total_pages": 50,
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "page": 4,
+          "subject": ""
+        },
+        "score": 1.1575456857681274
+      },
+      {
+        "content": "CHAPTER 5 (Contd.): HYBRID & REMOTE WORK REGULATIONS\n5.3 Hybrid Work Model Guidelines\nEligible employees may work remotely up to 3 days per week and are required in-office\n2 days per week (typically Tuesdays and Thursdays for team sprint plannings and\ndemos). Fully remote arrangements require explicit approval from the Executive\nCommittee.\n5.4 Remote Workstation & Ergonomic Standards\nRemote employees must maintain a dedicated, secure workspace with high-speed internet\n(minimum 100 Mbps download / 20 Mbps upload). A one-time home office setup\nreimbursement of up to $1,000 is available for desks, ergonomic chairs, and external\nmonitors.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 15 of 50",
+        "metadata": {
+          "page": 14,
+          "trapped": "",
+          "creationdate": "",
+          "author": "",
+          "moddate": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "total_pages": 50,
+          "creator": "",
+          "subject": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "modDate": "",
+          "creationDate": "",
+          "keywords": ""
+        },
+        "score": 1.2928369045257568
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_024",
+    "query": "Within how many days of trip completion must travel expenses be filed before reimbursement is forfeited?",
+    "category": "Expense Deadlines",
+    "difficulty": "Medium",
+    "chapter": "Chapter 12 (Page 42)",
+    "expected_chunks": [
+      "12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip conclusion. Late submissions beyond 30 days are subject to forfeiture of reimbursement."
+    ],
+    "ground_truth_answer": "Expense reports must be submitted within 15 calendar days of trip conclusion. Submissions delayed past 30 days are subject to forfeiture of reimbursement.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 12 (Contd.): EXPENSE REPORTING & AUDIT PROTOCOLS\n12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage\nrates (67 cents/mile in 2026), plus tolls and parking.\n12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip\nconclusion. Late submissions beyond 30 days are subject to forfeiture of\nreimbursement.\n12.7 Non-Reimbursable Expenses\nAirline seat upgrade fees, flight change penalties due to personal reasons, hotel\nminibar items, traffic citations, and spa services are non-reimbursable.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 42 of 50",
+        "metadata": {
+          "producer": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "moddate": "",
+          "subject": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "keywords": "",
+          "modDate": "",
+          "page": 41,
+          "trapped": "",
+          "creationDate": "",
+          "author": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 0.8682697415351868
+      },
+      {
+        "content": "CHAPTER 12: TRAVEL & EXPENSE REIMBURSEMENT\n12.1 Business Travel Authorization\nAll corporate travel must be pre-approved by the department director. Bookings must\nbe made via Navan (TripActions) at least 14 days in advance for domestic travel and\n21 days for international travel.\n12.2 Air Travel Cabin Class Rules\n\u00b7 Domestic Flights & International < 6 Hours: Standard Economy Class.\n\u00b7 International Flights > 6 Hours: Premium Economy.\n\u00b7 International Flights > 10 Hours: Business Class (requires VP level sign-off).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 40 of 50",
+        "metadata": {
+          "modDate": "",
+          "creator": "",
+          "producer": "",
+          "format": "PDF 1.7",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationdate": "",
+          "page": 39,
+          "trapped": "",
+          "keywords": "",
+          "title": "",
+          "creationDate": "",
+          "total_pages": 50,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "subject": ""
+        },
+        "score": 0.9786515831947327
+      },
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "keywords": "",
+          "creator": "",
+          "creationdate": "",
+          "creationDate": "",
+          "author": "",
+          "page": 32,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "trapped": "",
+          "modDate": "",
+          "total_pages": 50,
+          "moddate": "",
+          "title": "",
+          "format": "PDF 1.7",
+          "producer": ""
+        },
+        "score": 1.089330792427063
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_025",
+    "query": "How many days of paid bereavement leave do I receive if an immediate family member passes away?",
+    "category": "Leaves of Absence",
+    "difficulty": "Easy",
+    "chapter": "Chapter 11 (Page 39)",
+    "expected_chunks": [
+      "11.6 Bereavement Leave Policy\nEmployees are granted 5 consecutive days of paid bereavement leave for immediate family members (spouse, child, parent, sibling) and 3 days for extended family members."
+    ],
+    "ground_truth_answer": "Employees receive 5 consecutive business days of paid bereavement leave for an immediate family member (and 3 days for extended family).",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 11 (Contd.): MILITARY, BEREAVEMENT & JURY DUTY\n11.5 Military Leave (USERRA)\nEmployees called to active military duty receive leave in compliance with USERRA,\nalong with up to 6 months of differential pay to bridge military and base salary\nearnings.\n11.6 Bereavement Leave Policy\nEmployees are granted 5 consecutive days of paid bereavement leave for immediate\nfamily members (spouse, child, parent, sibling) and 3 days for extended family\nmembers.\n11.7 Jury Duty Leave\nUp to 10 business days of fully paid leave is provided for statutory jury service\nupon providing summons documentation.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 39 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "subject": "",
+          "author": "",
+          "moddate": "",
+          "trapped": "",
+          "creationDate": "",
+          "title": "",
+          "producer": "",
+          "format": "PDF 1.7",
+          "modDate": "",
+          "creationdate": "",
+          "creator": "",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "page": 38
+        },
+        "score": 0.9723551273345947
+      },
+      {
+        "content": "CHAPTER 10 (Contd.): SICK LEAVE & PERSONAL TIME\n10.3 Paid Sick Leave Allocation\nEmployees receive 10 paid sick days on January 1st of each calendar year (prorated\nfor new hires). Sick leave covers personal illness, medical appointments, and caring\nfor an immediate family member.\n10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences\nextending beyond 3 consecutive working days.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 34 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "keywords": "",
+          "trapped": "",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "creator": "",
+          "page": 33,
+          "subject": "",
+          "creationdate": "",
+          "title": "",
+          "modDate": "",
+          "producer": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": ""
+        },
+        "score": 1.2099264860153198
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): FAMILY AND MEDICAL LEAVE ACT (FMLA)\n11.3 FMLA Leave Eligibility & Entitlement\nEmployees with at least 12 months of service and 1,250 hours worked in the previous\n12-month period are eligible for up to 12 weeks of job-protected, unpaid leave under\nthe Family and Medical Leave Act (FMLA) for serious personal health conditions or\nfamily care.\n11.4 Health Benefits Maintenance During FMLA\nGroup health benefits are maintained during FMLA leave under the same conditions as\nif the employee had continued working.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 38 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "total_pages": 50,
+          "format": "PDF 1.7",
+          "keywords": "",
+          "page": 37,
+          "creationDate": "",
+          "creationdate": "",
+          "trapped": "",
+          "title": "",
+          "modDate": "",
+          "producer": "",
+          "subject": ""
+        },
+        "score": 1.254736065864563
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_026",
+    "query": "I am a full-time Senior Engineer resigning after 3 years. What is my required resignation notice period, what happens to my unvested RSUs, how many days of vacation payout am I capped at, and what is my COBRA election window?",
+    "category": "Extreme 4-Way Multi-Hop",
+    "difficulty": "Extremely Hard",
+    "chapter": "Cross-Chapter (Ch 15, Ch 9, Ch 10, Ch 15)",
+    "expected_chunks": [
+      "15.1 Voluntary Resignation Notice Periods\nEmployees resigning voluntarily must provide advance written notice to their reporting manager and HR:\n\u2022 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.",
+      "9.5 Restricted Stock Units (RSUs) & Equity Grants\nStandard vesting schedule follows a 4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the remaining 36 months.",
+      "10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u2022 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)",
+      "15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14 days of termination, allowing medical coverage continuation for up to 18 months at group rates."
+    ],
+    "ground_truth_answer": "As an Individual Contributor (IC), you must provide 30 calendar days advance notice. Unvested RSUs are forfeited upon departure. Accrued vacation payout is capped at 37.5 days (for 3-5 years tenure). You will receive your COBRA continuation packet within 14 days of termination with up to 18 months of group coverage.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 15: SEPARATION OF EMPLOYMENT & EXIT\n15.1 Voluntary Resignation Notice Periods\nEmployees resigning voluntarily must provide advance written notice to their\nreporting manager and HR:\n\u00b7 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.\n\u00b7 Managers, Directors, and Executive Staff: Minimum 60 calendar days notice.\n15.2 Exit Interview & Knowledge Transfer\nDeparting employees complete a confidential exit interview with People Operations and\na structured knowledge transfer document to ensure uninterrupted team operations.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 48 of 50",
+        "metadata": {
+          "total_pages": 50,
+          "creationdate": "",
+          "trapped": "",
+          "format": "PDF 1.7",
+          "page": 47,
+          "creator": "",
+          "moddate": "",
+          "subject": "",
+          "keywords": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "title": "",
+          "author": "",
+          "producer": ""
+        },
+        "score": 0.9867836833000183
+      },
+      {
+        "content": "CHAPTER 15 (Contd.): FINAL SETTLEMENT, SEVERANCE & COBRA\n15.3 Return of Company Assets\nAll laptops, monitors, corporate credit cards, security fobs, and confidential files\nmust be surrendered to IT on or before the final working day.\n15.4 Final Paycheck and Accrued PTO Settlement\nFinal wages and accrued, unused vacation balance are disbursed within 10 business\ndays following the last day of employment in accordance with regional statutory wage\npayment regulations.\n15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14\ndays of termination, allowing medical coverage continuation for up to 18 months at\ngroup rates.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 49 of 50",
+        "metadata": {
+          "page": 48,
+          "creationdate": "",
+          "trapped": "",
+          "creator": "",
+          "modDate": "",
+          "moddate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "title": "",
+          "format": "PDF 1.7",
+          "creationDate": "",
+          "keywords": "",
+          "subject": "",
+          "author": "",
+          "total_pages": 50
+        },
+        "score": 1.0313684940338135
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): MILITARY, BEREAVEMENT & JURY DUTY\n11.5 Military Leave (USERRA)\nEmployees called to active military duty receive leave in compliance with USERRA,\nalong with up to 6 months of differential pay to bridge military and base salary\nearnings.\n11.6 Bereavement Leave Policy\nEmployees are granted 5 consecutive days of paid bereavement leave for immediate\nfamily members (spouse, child, parent, sibling) and 3 days for extended family\nmembers.\n11.7 Jury Duty Leave\nUp to 10 business days of fully paid leave is provided for statutory jury service\nupon providing summons documentation.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 39 of 50",
+        "metadata": {
+          "moddate": "",
+          "keywords": "",
+          "creationDate": "",
+          "title": "",
+          "page": 38,
+          "author": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "creationdate": "",
+          "modDate": "",
+          "total_pages": 50,
+          "creator": "",
+          "format": "PDF 1.7",
+          "trapped": "",
+          "subject": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 1.2068638801574707
+      }
+    ],
+    "metrics": {
+      "context_recall": 0.6061,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 0.7547,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_027",
+    "query": "If an employee is summoned for statutory court jury service, can they use their 16-hour Volunteer Time Off (VTO) allowance to cover the court attendance, or is there a separate paid leave?",
+    "category": "Adversarial Semantic Distractor",
+    "difficulty": "Extremely Hard",
+    "chapter": "Cross-Chapter (Ch 11 vs Ch 10)",
+    "expected_chunks": [
+      "11.7 Jury Duty Leave\nUp to 10 business days of fully paid leave is provided for statutory jury service upon providing summons documentation.",
+      "10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in non-profit community initiatives and charitable events."
+    ],
+    "ground_truth_answer": "No. Jury duty is covered under a separate Jury Duty Leave policy (up to 10 business days of fully paid leave upon showing summons). Volunteer Time Off (VTO) is restricted to non-profit community initiatives and charitable events.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 10 (Contd.): SABBATICAL & VOLUNTEER TIME OFF\n10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are\nentitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual\nPTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval.\n10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in\nnon-profit community initiatives and charitable events.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 36 of 50",
+        "metadata": {
+          "producer": "",
+          "author": "",
+          "keywords": "",
+          "page": 35,
+          "trapped": "",
+          "creator": "",
+          "title": "",
+          "subject": "",
+          "modDate": "",
+          "creationDate": "",
+          "moddate": "",
+          "total_pages": 50,
+          "creationdate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf"
+        },
+        "score": 0.8828496932983398
+      },
+      {
+        "content": "CHAPTER 11 (Contd.): MILITARY, BEREAVEMENT & JURY DUTY\n11.5 Military Leave (USERRA)\nEmployees called to active military duty receive leave in compliance with USERRA,\nalong with up to 6 months of differential pay to bridge military and base salary\nearnings.\n11.6 Bereavement Leave Policy\nEmployees are granted 5 consecutive days of paid bereavement leave for immediate\nfamily members (spouse, child, parent, sibling) and 3 days for extended family\nmembers.\n11.7 Jury Duty Leave\nUp to 10 business days of fully paid leave is provided for statutory jury service\nupon providing summons documentation.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 39 of 50",
+        "metadata": {
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7",
+          "keywords": "",
+          "title": "",
+          "creationdate": "",
+          "total_pages": 50,
+          "moddate": "",
+          "creationDate": "",
+          "modDate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "page": 38,
+          "creator": "",
+          "author": "",
+          "trapped": "",
+          "subject": "",
+          "producer": ""
+        },
+        "score": 0.9322993755340576
+      },
+      {
+        "content": "CHAPTER 10: PAID TIME OFF (PTO) & HOLIDAYS\n10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u00b7 0 to 2 Years: 20 days per year (1.66 days/month, max accrual cap 30 days)\n\u00b7 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)\n\u00b7 6+ Years: 30 days per year (2.50 days/month, max accrual cap 45 days)\n10.2 PTO Request and Approval Procedures\nVacation requests exceeding 3 consecutive business days must be submitted through\nWorkday at least 2 weeks in advance and approved by the reporting manager to ensure\nteam coverage.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 33 of 50",
+        "metadata": {
+          "keywords": "",
+          "creationdate": "",
+          "format": "PDF 1.7",
+          "producer": "",
+          "moddate": "",
+          "page": 32,
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creationDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "total_pages": 50,
+          "title": "",
+          "trapped": "",
+          "author": "",
+          "subject": "",
+          "modDate": ""
+        },
+        "score": 1.1117326021194458
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_028",
+    "query": "Compare the specific annual dollar reimbursement limits for the home office setup, the monthly wellness stipend, the annual learning budget, and the graduate tuition assistance program.",
+    "category": "4-Way Numerical Synthesis",
+    "difficulty": "Extremely Hard",
+    "chapter": "Cross-Chapter (Ch 5 & Ch 8)",
+    "expected_chunks": [
+      "5.4 Remote Workstation & Ergonomic Standards\nA one-time home office setup reimbursement of up to $1,000 is available for desks, ergonomic chairs, and external monitors.",
+      "8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via Expensify for gym memberships, fitness tracking hardware, yoga classes, or meditation subscriptions (Headspace, Calm).",
+      "8.7 Professional Development Allowance\nEach regular full-time employee is allocated an annual Learning & Development budget of $1,500 for attending technical conferences, purchasing books, or completing accredited certifications.",
+      "8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree programs (Computer Science, MBA) can apply for up to $5,250 in annual tuition reimbursement with a 1-year post-completion retention commitment."
+    ],
+    "ground_truth_answer": "The annual / one-time financial limits are: Home office setup: $1,000 (one-time); Wellness stipend: $100/month ($1,200/year); Learning & Development budget: $1,500/year; Graduate Tuition Assistance: up to $5,250/year.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 8 (Contd.): WELLNESS & MENTAL HEALTH SUPPORT\n8.5 Employee Assistance Program (EAP)\nThe EAP provides confidential counseling, legal advice, and financial planning\nservices. Employees and immediate family receive up to 8 free counseling sessions per\nissue per year via Lyra Health.\n8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via\nExpensify for gym memberships, fitness tracking hardware, yoga classes, or meditation\nsubscriptions (Headspace, Calm).\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 28 of 50",
+        "metadata": {
+          "author": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "creationDate": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "format": "PDF 1.7",
+          "creator": "",
+          "keywords": "",
+          "modDate": "",
+          "producer": "",
+          "creationdate": "",
+          "moddate": "",
+          "page": 27,
+          "subject": ""
+        },
+        "score": 1.0987811088562012
+      },
+      {
+        "content": "CHAPTER 8 (Contd.): LEARNING & TUITION ASSISTANCE\n8.7 Professional Development Allowance\nEach regular full-time employee is allocated an annual Learning & Development budget\nof $1,500 for attending technical conferences, purchasing books, or completing\naccredited certifications (AWS, GCP, CISA, PMP).\n8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree\nprograms (Computer Science, MBA) can apply for up to $5,250 in annual tuition\nreimbursement with a 1-year post-completion retention commitment.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 29 of 50",
+        "metadata": {
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "creationDate": "",
+          "producer": "",
+          "moddate": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "modDate": "",
+          "creationdate": "",
+          "total_pages": 50,
+          "page": 28,
+          "subject": "",
+          "keywords": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "trapped": ""
+        },
+        "score": 1.1444928646087646
+      },
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "creationdate": "",
+          "keywords": "",
+          "modDate": "",
+          "title": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "total_pages": 50,
+          "trapped": "",
+          "author": "",
+          "creator": "",
+          "producer": "",
+          "creationDate": "",
+          "page": 4,
+          "format": "PDF 1.7",
+          "subject": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": ""
+        },
+        "score": 1.3049510717391968
+      }
+    ],
+    "metrics": {
+      "context_recall": 0.8158,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 0.8986,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_029",
+    "query": "Can fixed-term interns or fixed-term contractors claim statutory overtime at 1.5x regular pay, and do they qualify for the 4-week sabbatical after completing milestones?",
+    "category": "Classification & Eligibility Disambiguation",
+    "difficulty": "Extremely Hard",
+    "chapter": "Cross-Chapter (Ch 2, Ch 5, Ch 10)",
+    "expected_chunks": [
+      "2.1 Classification of Employment Status\n\u2022 Fixed-Term / Temporary: Hired for a specific milestone or defined period not exceeding 12 consecutive months.\n\u2022 Interns: Students participating in structured learning programs.",
+      "2.2 Exempt vs. Non-Exempt Classifications\n\u2022 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime pay for hours worked beyond 40 hours in a workweek.",
+      "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual PTO."
+    ],
+    "ground_truth_answer": "Fixed-term staff and interns who are classified as non-exempt are entitled to statutory overtime (1.5x hourly rate for hours over 40). However, they are NOT eligible for the 4-week paid sabbatical, which strictly requires 5 consecutive years of regular full-time service.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 2: EMPLOYMENT CATEGORIES & CLASSIFICATION\n2.1 Classification of Employment Status\n\u00b7 Regular Full-Time: Regularly scheduled to work 40 hours per week. Eligible for full\ncompany benefit suite.\n\u00b7 Regular Part-Time: Regularly scheduled to work less than 30 hours per week.\nEligible for statutory and prorated benefits.\n\u00b7 Fixed-Term / Temporary: Hired for a specific milestone or defined period not\nexceeding 12 consecutive months.\n\u00b7 Interns: Students participating in structured learning programs.\n2.2 Exempt vs. Non-Exempt Classifications\n\u00b7 Exempt Employees: Salaried employees occupying executive, managerial,\nadministrative, or specialized professional roles exempt from statutory overtime\nunder the FLSA.\n\u00b7 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime\npay for hours worked beyond 40 hours in a workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 5 of 50",
+        "metadata": {
+          "trapped": "",
+          "producer": "",
+          "creationdate": "",
+          "keywords": "",
+          "creator": "",
+          "title": "",
+          "creationDate": "",
+          "author": "",
+          "moddate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "subject": "",
+          "total_pages": 50,
+          "page": 4,
+          "modDate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "format": "PDF 1.7"
+        },
+        "score": 0.7175343632698059
+      },
+      {
+        "content": "CHAPTER 10 (Contd.): SABBATICAL & VOLUNTEER TIME OFF\n10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are\nentitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual\nPTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval.\n10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in\nnon-profit community initiatives and charitable events.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 36 of 50",
+        "metadata": {
+          "moddate": "",
+          "creationDate": "",
+          "creator": "",
+          "format": "PDF 1.7",
+          "keywords": "",
+          "page": 35,
+          "title": "",
+          "total_pages": 50,
+          "trapped": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "producer": "",
+          "subject": "",
+          "creationdate": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "author": ""
+        },
+        "score": 1.1560204029083252
+      },
+      {
+        "content": "CHAPTER 5 (Contd.): TIMEKEEPING & OVERTIME ADMINISTRATION\n5.7 Accurate Time Tracking for Non-Exempt Staff\nNon-exempt employees must accurately clock in and clock out for all shifts and lunch\nperiods using the digital timekeeping system. Working off the clock is strictly\nprohibited.\n5.8 Overtime Pre-Approval & Rates\nAll overtime for non-exempt staff must be pre-approved in writing by the department\nmanager. Overtime is paid at 1.5 times the regular hourly rate for hours worked in\nexcess of 40 hours per workweek.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 17 of 50",
+        "metadata": {
+          "format": "PDF 1.7",
+          "moddate": "",
+          "author": "",
+          "creationDate": "",
+          "title": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "modDate": "",
+          "producer": "",
+          "creationdate": "",
+          "page": 16,
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "keywords": "",
+          "subject": "",
+          "total_pages": 50
+        },
+        "score": 1.221916675567627
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 1.0,
+      "mrr": 1.0,
+      "f1_score": 1.0,
+      "hit_at_1": true
+    }
+  },
+  {
+    "id": "TC_030",
+    "query": "What is Nexa's cryptocurrency reimbursement policy for hardware purchases, and what is the deadline to submit Ethereum gas fee receipts in Expensify?",
+    "category": "Adversarial Hallucination / Out of Scope",
+    "difficulty": "Extremely Hard",
+    "chapter": "Out of Scope (Distractor)",
+    "expected_chunks": [],
+    "ground_truth_answer": "Nexa does not support cryptocurrency reimbursements or gas fee claims. All expense submissions must be in fiat currency with standard itemized vendor receipts.",
+    "retrieved_chunks": [
+      {
+        "content": "CHAPTER 12 (Contd.): EXPENSE REPORTING & AUDIT PROTOCOLS\n12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage\nrates (67 cents/mile in 2026), plus tolls and parking.\n12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip\nconclusion. Late submissions beyond 30 days are subject to forfeiture of\nreimbursement.\n12.7 Non-Reimbursable Expenses\nAirline seat upgrade fees, flight change penalties due to personal reasons, hotel\nminibar items, traffic citations, and spa services are non-reimbursable.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 42 of 50",
+        "metadata": {
+          "subject": "",
+          "title": "",
+          "format": "PDF 1.7",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "moddate": "",
+          "creationdate": "",
+          "creator": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "trapped": "",
+          "author": "",
+          "producer": "",
+          "total_pages": 50,
+          "creationDate": "",
+          "keywords": "",
+          "modDate": "",
+          "page": 41
+        },
+        "score": 0.8748014569282532
+      },
+      {
+        "content": "CHAPTER 6: COMPENSATION & PAYROLL ADMINISTRATION\n6.1 Compensation Philosophy & Market Benchmarks\nNexa Technologies benchmarks compensation against top-quartile technology market data\n(using Radford and Mercer tech compensation surveys). Pay bands are reviewed\nsemi-annually to ensure equitable, competitive baseline compensation.\n6.2 Pay Schedules and Direct Deposit\nEmployees are paid on a semi-monthly cycle on the 15th and the final business day of\neach calendar month. Direct deposit into up to three designated bank accounts is\nmandatory.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 18 of 50",
+        "metadata": {
+          "moddate": "",
+          "page": 17,
+          "total_pages": 50,
+          "creationDate": "",
+          "modDate": "",
+          "keywords": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "author": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "creator": "",
+          "format": "PDF 1.7",
+          "creationdate": "",
+          "title": "",
+          "subject": "",
+          "producer": ""
+        },
+        "score": 0.9022213220596313
+      },
+      {
+        "content": "CHAPTER 4 (Contd.): GIFTS, ENTERTAINMENT & ANTI-CORRUPTION\n4.3 Gifts and Business Courtesies Policy\nEmployees may not accept gifts, gratuities, entertainment, or travel from clients or\nvendors exceeding $100 in aggregate annual value. Any gift exceeding $50 must be\nreported to the Legal Compliance department within 5 business days.\n4.4 Anti-Bribery & FCPA Compliance\nNexa complies fully with the US Foreign Corrupt Practices Act (FCPA) and UK Bribery\nAct. Bribes, kickbacks, or facilitation payments to public officials or commercial\npartners are strictly forbidden under penalty of immediate termination and criminal\nprosecution.\nGLOBAL ENTERPRISE HR POLICY MANUAL & HANDBOOK\nCONFIDENTIAL - INTERNAL USE\nNEXA TECHNOLOGIES INC. \u00a9 2026\nPage 12 of 50",
+        "metadata": {
+          "author": "",
+          "page": 11,
+          "moddate": "",
+          "total_pages": 50,
+          "subject": "",
+          "creator": "",
+          "creationdate": "",
+          "file_path": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "keywords": "",
+          "producer": "",
+          "trapped": "",
+          "source": "/Users/shubham/Desktop/Evals /data/hr_policy.pdf",
+          "modDate": "",
+          "format": "PDF 1.7",
+          "title": "",
+          "creationDate": ""
+        },
+        "score": 0.9478803277015686
+      }
+    ],
+    "metrics": {
+      "context_recall": 1.0,
+      "context_precision": 0.0,
+      "mrr": 0.0,
+      "f1_score": 0.0,
+      "hit_at_1": false
+    }
+  }
+]

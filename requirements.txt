@@ -11,3 +11,5 @@ deepeval
 python-multipart
 chromadb
 langchain-chroma
+pymupdf
+sentence-transformers
