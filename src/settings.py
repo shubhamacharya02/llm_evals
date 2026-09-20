@@ -17,7 +17,7 @@ class Settings:
     SEARCH_TYPE: str = os.getenv("SEARCH_TYPE", "similarity")  # similarity or mmr
     
     # LLM Model Settings
-    MODEL_NAME: str = os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")
+    MODEL_NAME: str = os.getenv("MODEL_NAME", "openai/gpt-oss-120b")
     TEMPERATURE: float = float(os.getenv("TEMPERATURE", 0.0))
     MAX_TOKENS: int = int(os.getenv("MAX_TOKENS", 1024))
     

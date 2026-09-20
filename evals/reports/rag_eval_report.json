@@ -1,0 +1,1662 @@
+{
+  "status": "success",
+  "timestamp": "2026-09-20T22:44:20.042814",
+  "elapsed_seconds": 910.74,
+  "model_name": "openai/gpt-oss-120b",
+  "top_k": 4,
+  "total_test_cases": 40,
+  "summary_metrics": {
+    "faithfulness_avg_score": 4.3,
+    "faithfulness_percentage": 86.0,
+    "answer_relevancy_avg_score": 4.4,
+    "answer_relevancy_percentage": 88.0,
+    "semantic_correctness_avg_score": 4.35,
+    "semantic_correctness_percentage": 87.0,
+    "refusal_accuracy_avg_score": 4.4,
+    "refusal_accuracy_percentage": 88.0,
+    "overall_quality_score_5": 4.36,
+    "overall_quality_percentage": 87.2,
+    "total_passed": 34,
+    "pass_rate_percentage": 85.0
+  },
+  "category_breakdown": {
+    "In-Scope Factual": {
+      "count": 19,
+      "faithfulness_avg": 4.95,
+      "relevancy_avg": 5.0,
+      "correctness_avg": 4.89,
+      "refusal_avg": 5.0,
+      "pass_rate_percentage": 100.0
+    },
+    "Numerical & Tenure Calculation": {
+      "count": 2,
+      "faithfulness_avg": 5.0,
+      "relevancy_avg": 5.0,
+      "correctness_avg": 5.0,
+      "refusal_avg": 5.0,
+      "pass_rate_percentage": 100.0
+    },
+    "Multi-Hop Cross-Chapter": {
+      "count": 4,
+      "faithfulness_avg": 2.5,
+      "relevancy_avg": 3.0,
+      "correctness_avg": 3.0,
+      "refusal_avg": 3.0,
+      "pass_rate_percentage": 50.0
+    },
+    "Classification Disambiguation": {
+      "count": 2,
+      "faithfulness_avg": 3.0,
+      "relevancy_avg": 3.0,
+      "correctness_avg": 3.0,
+      "refusal_avg": 3.0,
+      "pass_rate_percentage": 50.0
+    },
+    "False Premise & Out-of-Scope": {
+      "count": 13,
+      "faithfulness_avg": 4.0,
+      "relevancy_avg": 4.08,
+      "correctness_avg": 4.08,
+      "refusal_avg": 4.08,
+      "pass_rate_percentage": 76.9
+    }
+  },
+  "test_cases": [
+    {
+      "id": "RAG_TC_001",
+      "query": "Can the company reimburse me for buying a standing desk or ergonomic chair for my home setup?",
+      "category": "In-Scope Factual",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 5 (Page 15)",
+      "expected_chunks": [
+        "5.4 Remote Workstation & Ergonomic Standards\nRemote employees must maintain a dedicated, secure workspace with high-speed internet (minimum 100 Mbps download / 20 Mbps upload). A one-time home office setup reimbursement of up to $1,000 is available for desks, ergonomic chairs, and external monitors."
+      ],
+      "ground_truth_answer": "Yes, remote employees are eligible for a one-time home office setup reimbursement of up to $1,000 for desks, ergonomic chairs, and external monitors.",
+      "generated_answer": "Yes.\u202fAccording to **Chapter\u202f5, Section\u202f5.4 \u2013 Remote Workstation & Ergonomic Standards**, remote employees are eligible for a **one\u2011time home\u2011office setup reimbursement of up to\u202f$1,000**. This reimbursement can be used for items such as **desks, ergonomic chairs, and external monitors**.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer are directly supported by Chunk 1 of the retrieved context with no extra or missing information."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about reimbursement for a standing desk or ergonomic chair, providing the relevant policy details."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim, conveying the same facts and limits."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope; the answer correctly provides the information without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 15",
+        "Page 28",
+        "Page 41",
+        "Page 27"
+      ]
+    },
+    {
+      "id": "RAG_TC_002",
+      "query": "How many days of paid vacation do I accrue annually if I have 4 years of continuous tenure, and what is my maximum accrual cap?",
+      "category": "Numerical & Tenure Calculation",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 10 (Page 33)",
+      "expected_chunks": [
+        "10.1 Annual Vacation Accrual Rates\nPaid vacation accrues on a semi-monthly basis according to continuous company tenure:\n\u2022 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)"
+      ],
+      "ground_truth_answer": "Employees with 3 to 5 years of continuous tenure accrue 25 days of paid vacation per year (2.08 days/month), with a maximum accrual cap of 37.5 days.",
+      "generated_answer": "Based on **Chapter\u202f10: Paid Time Off (PTO) & Holidays**:\n\n- **Annual vacation accrual** for employees with **3 to 5 years of continuous tenure** is **25 days per year** (2.08 days per month).  \n- The **maximum accrual cap** for this tenure band is **37.5 days**.\n\n**Reference:** Excerpt\u202f1, Page\u202f33 \u2013 \u201c10.1 Annual Vacation Accrual Rates.\u201d",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (25 days per year, 2.08 days/month, 37.5 day cap) are directly supported by Chunk 1 of the retrieved policy."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly answers both parts of the query (annual accrual and maximum cap) without extraneous information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth exactly in numbers and conditions."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the model correctly provides the answer without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 33",
+        "Page 34",
+        "Page 50",
+        "Page 5"
+      ]
+    },
+    {
+      "id": "RAG_TC_003",
+      "query": "If I take primary caregiver parental leave and then use the phased return program, how does my schedule and salary work during those first few weeks back?",
+      "category": "Multi-Hop Cross-Chapter",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 11 (Page 37)",
+      "expected_chunks": [
+        "11.1 Parental Leave (Maternity, Paternity & Adoption)\n\u2022 Primary Caregivers: 16 weeks of 100% base salary paid leave.",
+        "11.2 Phased Return-to-Work Program\nNew parents may work an 80% part-time schedule (4 days/week) at 100% pay for the first 4 weeks following return from parental leave."
+      ],
+      "ground_truth_answer": "Primary caregivers receive 16 weeks of 100% paid parental leave. Upon returning, the phased return-to-work program allows working an 80% part-time schedule (4 days/week) at 100% full pay for the first 4 weeks.",
+      "generated_answer": "**Schedule and salary during the first\u202f4\u202fweeks after you return from primary\u2011caregiver parental leave**\n\n| Item | What the policy says | How it applies to you |\n|------|----------------------|-----------------------|\n| **Leave taken** | Primary caregivers receive **16\u202fweeks of paid leave at 100\u202f% of base salary**. (Chapter\u202f11,\u202f11.1) | You will have completed up to 16\u202fweeks of fully\u2011paid leave. |\n| **Phased return\u2011to\u2011work** | \u201cNew parents may work an **80\u202f% part\u2011time schedule (4 days/week) at 100\u202f% pay** for the **first\u202f4\u202fweeks** following return from parental leave.\u201d (Chapter\u202f11,\u202f11.2) | When you come back, you will work **four days each week** (i.e., 80\u202f% of a full\u2011time schedule) **but will continue to be paid at 100\u202f% of your base salary** for those four weeks. |\n| **Duration of the phased schedule** | Fixed at **4\u202fweeks** after the leave ends. | After the fourth week, you would transition back to the standard full\u2011time schedule (5 days/week) and continue at 100\u202f% salary as normal. |\n\n**Summary**\n\n- After your 16\u2011week primary\u2011caregiver parental leave (paid at full salary), you may elect the phased return\u2011to\u2011work program.\n- For the **first four weeks back**, you work **four days per week** (80\u202f% of a normal workweek) **while still receiving 100\u202f% of your base salary**.\n- This arrangement lasts **exactly four weeks**; thereafter you resume the regular full\u2011time schedule and pay.\n\n*References: Chapter\u202f11 \u2013 Parental & Caregiver Leaves, Sections\u202f11.1 (Primary Caregiver Parental Leave) and\u202f11.2 (Phased Return\u2011to\u2011Work Program).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 4,
+          "reasoning": "All core facts (16 weeks paid leave, 80% schedule, 100% pay for first 4 weeks) are directly supported by the retrieved context. The statement about returning to full\u2011time after the 4\u2011week period is a logical inference not explicitly stated, causing a minor extrapolation."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's request about schedule and salary during the first weeks back, providing precise details without irrelevant information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The generated answer matches the ground truth verbatim in facts, numbers, and conclusions."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the model correctly provides the answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 37",
+        "Page 38",
+        "Page 34",
+        "Page 2"
+      ]
+    },
+    {
+      "id": "RAG_TC_004",
+      "query": "What is the resignation notice period required for engineering managers and directors versus individual contributors?",
+      "category": "Classification Disambiguation",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 15 (Page 48)",
+      "expected_chunks": [
+        "15.1 Voluntary Resignation Notice Periods\n\u2022 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.\n\u2022 Managers, Directors, and Executive Staff: Minimum 60 calendar days notice."
+      ],
+      "ground_truth_answer": "Individual contributors (IC1-IC5) must provide a minimum of 30 calendar days notice, while Managers, Directors, and Executive Staff must provide a minimum of 60 calendar days notice.",
+      "generated_answer": "The HR manual specifies two notice\u2011period categories:\n\n- **Individual Contributors (IC1\u202f\u2013\u202fIC5):**\u202fminimum **30\u202fcalendar days** notice.  \n- **Managers, Directors, and Executive Staff (including engineering managers and directors):**\u202fminimum **60\u202fcalendar days** notice.  \n\n**Reference:** CHAPTER\u202f15 \u2013 \u201cVoluntary Resignation Notice Periods,\u201d page\u202f48.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements about notice periods exactly match the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly answers the user's specific comparison of notice periods for engineering managers/directors and individual contributors."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Matches the ground\u2011truth answer word\u2011for\u2011word; facts and numbers are identical."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Question is in\u2011scope and the model provides the correct answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 48",
+        "Page 16",
+        "Page 2",
+        "Page 33"
+      ]
+    },
+    {
+      "id": "RAG_TC_005",
+      "query": "What is the daily meal per diem for international business travel, and what flight class can I book for an 8-hour international flight?",
+      "category": "Multi-Hop Cross-Chapter",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 12 (Page 40-41)",
+      "expected_chunks": [
+        "12.2 Air Travel Cabin Class Rules\n\u2022 International Flights > 6 Hours: Premium Economy.",
+        "12.4 Daily Meals & Incidentals Per Diem (M&IE)\nMeal expenses are reimbursed up to $75/day (domestic) or $100/day (international)."
+      ],
+      "ground_truth_answer": "The daily meal per diem for international travel is up to $100/day. For an 8-hour international flight (exceeding 6 hours), you are eligible to book Premium Economy class.",
+      "generated_answer": "- **Daily meal per\u2011diem for international business travel:**\u202f$100 per day (before taxes).\u202f*See Chapter\u202f12, Section\u202f12.4 (Meal & Incidentals Per Diem) and the \u201cMeal Travel Per Diem\u201d line in the Quick Reference Limits table (Excerpt\u202f3, Page\u202f50).*\n\n- **Flight class you may book for an 8\u2011hour international flight:**\u202f**Premium Economy**.\u202fInternational flights longer than 6\u202fhours are limited to Premium Economy (Business Class requires >10\u202fhours and VP\u2011level sign\u2011off).\u202f*See Chapter\u202f12, Section\u202f12.2 (Air Travel Cabin Class Rules) (Excerpt\u202f2, Page\u202f40).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 4,
+          "reasoning": "All core facts ( $100 international per diem and Premium Economy for >6h flights) are supported by the retrieved context. The added phrase \"before taxes\" is not in the source but does not contradict the policy, representing minor extrapolation."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly answers both parts of the user query: the daily meal per diem and the allowable flight class for an 8\u2011hour international flight."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth exactly in both amount ($100) and flight class (Premium Economy)."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the model provides a complete answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 41",
+        "Page 40",
+        "Page 50",
+        "Page 14"
+      ]
+    },
+    {
+      "id": "RAG_TC_006",
+      "query": "During what specific hours must both remote and in-office employees be accessible on Slack and Google Workspace?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 5 (Page 14)",
+      "expected_chunks": [
+        "5.2 Core Collaboration Hours\nTo facilitate cross-functional teamwork, all remote and in-office employees must be accessible on Slack and Google Workspace during Core Collaboration Hours: 10:00 AM to 4:00 PM in their respective home time zone."
+      ],
+      "ground_truth_answer": "Employees must be accessible during Core Collaboration Hours: 10:00 AM to 4:00 PM in their respective home time zone.",
+      "generated_answer": "Both remote and in\u2011office employees must be reachable on Slack and Google Workspace during **Core Collaboration Hours:\u202f10:00\u202fAM\u202f\u2013\u202f4:00\u202fPM** in their respective home time zone. \u3010Excerpt\u202f1,\u202fCHAPTER\u202f5\u202f\u00a75.2\u3011",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements exactly match the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly answers the user's question about the required accessibility hours."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Identical to the ground\u2011truth answer in facts, wording, and conclusion."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Question is in\u2011scope and the model provides the correct answer without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 14",
+        "Page 15",
+        "Page 17",
+        "Page 5"
+      ]
+    },
+    {
+      "id": "RAG_TC_007",
+      "query": "Can I use the monthly wellness stipend to pay for my gym membership or a meditation app subscription?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 8 (Page 28)",
+      "expected_chunks": [
+        "8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via Expensify for gym memberships, fitness tracking hardware, yoga classes, or meditation subscriptions (Headspace, Calm)."
+      ],
+      "ground_truth_answer": "Yes, employees receive a tax-free stipend of $100 per month ($1,200 annually) via Expensify for gym memberships, fitness tracking hardware, yoga, or meditation subscriptions like Headspace and Calm.",
+      "generated_answer": "Yes.\u202fAccording to **Chapter\u202f8, Section\u202f8.6 \u2013 Monthly Wellness Stipend**, the $100\u202fper\u2011month tax\u2011free stipend is provided \u201cvia Expensify for gym memberships, fitness tracking hardware, yoga classes, **or meditation subscriptions (Headspace, Calm)**.\u201d\u202fTherefore you may use the stipend to pay for a gym membership or a meditation\u2011app subscription.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer are directly supported by the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about using the stipend for gym membership or meditation app."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth exactly, including stipend amount, tax\u2011free status, and eligible expense types."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the answer provides the correct information without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 28",
+        "Page 41",
+        "Page 36",
+        "Page 32"
+      ]
+    },
+    {
+      "id": "RAG_TC_008",
+      "query": "How many consecutive days of unexcused absence without management contact will result in termination under the job abandonment policy?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 5 (Page 16)",
+      "expected_chunks": [
+        "5.6 Job Abandonment Policy\nThree (3) consecutive business days of absence without notification or contact with management constitutes voluntary resignation due to job abandonment."
+      ],
+      "ground_truth_answer": "Three (3) consecutive business days of absence without notification or contact constitutes voluntary resignation due to job abandonment.",
+      "generated_answer": "Under Nexa Technologies\u2019 Job Abandonment Policy, **three (3) consecutive business days of absence without any notification or contact with management** is considered a voluntary resignation due to job abandonment.\u202f\u3010Excerpt\u202f1,\u202fChapter\u202f5\u202f\u00a75.6\u3011.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements exactly match the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly answers the user's question about the number of consecutive unexcused days leading to termination."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Identical to the ground truth answer in facts and wording."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "In-scope question answered correctly without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 16",
+        "Page 48",
+        "Page 49",
+        "Page 33"
+      ]
+    },
+    {
+      "id": "RAG_TC_009",
+      "query": "When does an employee qualify for the 4-week fully paid sabbatical, and how far in advance must it be requested?",
+      "category": "Numerical & Tenure Calculation",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 10 (Page 36)",
+      "expected_chunks": [
+        "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual PTO. Sabbaticals must be scheduled at least 6 months in advance with VP approval."
+      ],
+      "ground_truth_answer": "Employees qualify after completing 5 consecutive years of full-time service. The 4-week paid sabbatical must be scheduled at least 6 months in advance with VP approval.",
+      "generated_answer": "**Eligibility:**  \n- An employee becomes qualified for the 4\u2011week fully paid Sabbatical Leave **after completing five (5) consecutive years of full\u2011time service** with Nexa Technologies.\u202f\u3010Excerpt\u202f1,\u202fPage\u202f36 \u2013 Chapter\u202f10,\u202fSection\u202f10.6\u3011\n\n**Advance\u2011notice requirement:**  \n- The Sabbatical must be **scheduled at least 6\u202fmonths in advance** and requires approval from a Vice President.\u202f\u3010Excerpt\u202f1,\u202fPage\u202f36 \u2013 Chapter\u202f10,\u202fSection\u202f10.6\u3011",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements about eligibility (5 consecutive years) and advance notice (6 months with VP approval) are directly supported by Chunk 1 of the retrieved context."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses both parts of the user query without extraneous information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim regarding eligibility criteria and scheduling requirement."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the required information without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 36",
+        "Page 33",
+        "Page 38",
+        "Page 34"
+      ]
+    },
+    {
+      "id": "RAG_TC_010",
+      "query": "How many consecutive sick days can an employee take before requiring a doctor's note or medical certificate?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 10 (Page 34)",
+      "expected_chunks": [
+        "10.4 Medical Certification Requirements\nA formal doctor note or medical certificate is required for sick leave absences extending beyond 3 consecutive working days."
+      ],
+      "ground_truth_answer": "A doctor note or medical certificate is required for sick leave absences extending beyond three (3) consecutive working days.",
+      "generated_answer": "An employee may take **up to\u202f3 consecutive working days** of sick leave without needing to provide a doctor\u2019s note or medical certificate. Once the absence extends **beyond\u202f3 consecutive working days**, a formal medical certification is required.  \n\n**Reference:** CHAPTER\u202f10, Section\u202f10.4 \u2013 \u201cMedical Certification Requirements\u201d (Page\u202f34).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements directly match the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response precisely answers the user's question about the number of consecutive sick days before a note is required."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer is semantically identical to the ground truth, correctly stating the 3\u2011day threshold."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the required information without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 34",
+        "Page 38",
+        "Page 16",
+        "Page 33"
+      ]
+    },
+    {
+      "id": "RAG_TC_011",
+      "query": "If a vendor sends me a holiday gift basket valued at $75, am I allowed to accept it and do I need to report it?",
+      "category": "In-Scope Factual",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 4 (Page 12)",
+      "expected_chunks": [
+        "4.3 Gifts and Business Courtesies Policy\nEmployees may not accept gifts, gratuities, entertainment, or travel from clients or vendors exceeding $100 in aggregate annual value. Any gift exceeding $50 must be reported to the Legal Compliance department within 5 business days."
+      ],
+      "ground_truth_answer": "Yes, gifts under $100 annual aggregate can be accepted, but because the gift value ($75) exceeds $50, it must be reported to the Legal Compliance department within 5 business days.",
+      "generated_answer": "**Answer:**  \nYes, you may accept the vendor\u2019s holiday gift basket valued at **$75** because it is below the $100 aggregate annual limit for gifts from clients or vendors. However, because the gift\u2019s value exceeds **$50**, you are required to **report it to the Legal Compliance department within 5 business days**.\n\n**Reference:** CHAPTER\u202f4, Section\u202f4.3 \u2013 \u201cGifts and Business Courtesies Policy\u201d (Page\u202f12).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (acceptance under $100, reporting requirement over $50, 5\u2011day deadline) are directly supported by the retrieved policy text with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses both parts of the user question\u2014whether the $75 gift can be accepted and whether it must be reported\u2014without extraneous information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The response matches the ground\u2011truth answer exactly in facts, thresholds, and required action."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope; the model correctly provides the answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 12",
+        "Page 42",
+        "Page 35",
+        "Page 41"
+      ]
+    },
+    {
+      "id": "RAG_TC_012",
+      "query": "What is the standard vesting schedule and cliff for new hire Restricted Stock Units (RSUs)?",
+      "category": "In-Scope Factual",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 9 (Page 32)",
+      "expected_chunks": [
+        "9.5 Restricted Stock Units (RSUs) & Equity Grants\nStandard vesting schedule follows a 4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the remaining 36 months."
+      ],
+      "ground_truth_answer": "RSUs vest over 4 years with a 25% cliff at 12 months (1 year), followed by 6.25% quarterly vesting over the remaining 36 months.",
+      "generated_answer": "The standard vesting schedule for new\u2011hire Restricted Stock Units (RSUs) under the 2024 Equity Incentive Plan is a **4\u2011year schedule**:\n\n- **Cliff:** 25\u202f% of the grant vests after the first 12\u202fmonths of service.  \n- **After the cliff:** the remaining 75\u202f% vests in equal quarterly installments of **6.25\u202f% each** over the next 36\u202fmonths (i.e., 6 quarters per year for three years).\n\n**Source:** CHAPTER\u202f9, Section\u202f9.5 \u2013 \u201cRestricted Stock Units (RSUs) & Equity Grants\u201d (Page\u202f32).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (4-year schedule, 25% cliff at 12 months, 6.25% quarterly vesting over remaining 36 months) are directly supported by Chunk 1 of the retrieved context with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's request for the standard vesting schedule and cliff for new\u2011hire RSUs, providing the complete schedule without irrelevant information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The generated answer matches the ground truth verbatim in facts, numbers, and conclusions."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope (false flag is false) and the answer provides the required information without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 32",
+        "Page 31",
+        "Page 5",
+        "Page 33"
+      ]
+    },
+    {
+      "id": "RAG_TC_013",
+      "query": "What happens if an employee fails to achieve the milestones outlined in their Performance Improvement Plan (PIP)?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 7 (Page 24)",
+      "expected_chunks": [
+        "7.6 Failure to Meet PIP Deliverables\nFailure to successfully achieve the stated milestones by the conclusion of the PIP timeframe results in immediate termination of employment."
+      ],
+      "ground_truth_answer": "Failure to achieve the milestones by the conclusion of the PIP timeframe results in immediate termination of employment.",
+      "generated_answer": "If an employee does not successfully achieve the milestones specified in their Performance Improvement Plan by the end of the PIP timeframe, the policy states that the employee will be **immediately terminated**.\u202f\u3010Excerpt\u202f1\u202f\u2013\u202fSection\u202f7.6, \u201cFailure to Meet PIP Deliverables.\u201d\u3011",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer are directly supported by Chunk 1 Section 7.6; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about consequences of missing PIP milestones."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim, conveying the same fact of immediate termination."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the correct information without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 24",
+        "Page 23",
+        "Page 22",
+        "Page 25"
+      ]
+    },
+    {
+      "id": "RAG_TC_014",
+      "query": "How many days per week are hybrid employees required to work in the office, and which days are typical?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 5 (Page 15)",
+      "expected_chunks": [
+        "5.3 Hybrid Work Model Guidelines\nEligible employees may work remotely up to 3 days per week and are required in-office 2 days per week (typically Tuesdays and Thursdays for team sprint plannings and demos)."
+      ],
+      "ground_truth_answer": "Hybrid employees must work in-office 2 days per week (typically Tuesdays and Thursdays) and may work remotely up to 3 days per week.",
+      "generated_answer": "Hybrid\u2011eligible employees must be in the office **2 days each week**.\u202fThe policy notes that these days are **typically Tuesdays and Thursdays** (used for team sprint planning and demos)\u3010Excerpt\u202f1,\u202fCHAPTER\u202f5\u202f5.3\u202fHybrid\u202fWork\u202fModel\u202fGuidelines\u3011.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (2 in-office days, typically Tuesdays and Thursdays) are directly supported by Chunk 1 of the retrieved context with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses both parts of the user query: number of required in\u2011office days and which days are typical."
+        },
+        "semantic_correctness": {
+          "score": 4,
+          "reasoning": "The answer matches the core facts of the ground truth but omits the additional detail that hybrid employees may work remotely up to 3 days per week."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the model provides a correct answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 15",
+        "Page 14",
+        "Page 5",
+        "Page 33"
+      ]
+    },
+    {
+      "id": "RAG_TC_015",
+      "query": "How much does the company contribute to a Health Savings Account (HSA) for an employee enrolled in a family health plan?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 8 (Page 26)",
+      "expected_chunks": [
+        "8.2 Health Savings Account (HSA) and FSA\nEmployees enrolled in High Deductible Health Plans (HDHP) receive a company HSA contribution of $1,000/year (individual) or $2,000/year (family)."
+      ],
+      "ground_truth_answer": "The company contributes $2,000 per year to the HSA for employees enrolled in family coverage ($1,000/year for individuals).",
+      "generated_answer": "The company contributes **$2,000 per year** to the Health Savings Account (HSA) for an employee who is enrolled in a **family** High\u2011Deductible Health Plan (HDHP).  \n\n*Reference: Chapter\u202f8, Section\u202f8.2 \u2013 \u201cHealth Savings Account (HSA) and FSA\u201d (Excerpt\u202f1, Page\u202f26).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer are directly supported by Chunk 1 of the retrieved context; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's specific question with the exact contribution amount for family coverage."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth exactly, stating $2,000 per year for family HSA contributions."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the correct information without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 26",
+        "Page 28",
+        "Page 2",
+        "Page 38"
+      ]
+    },
+    {
+      "id": "RAG_TC_016",
+      "query": "What discount do employees receive when purchasing company stock through the Employee Stock Purchase Plan (ESPP)?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 9 (Page 32)",
+      "expected_chunks": [
+        "9.6 Employee Stock Purchase Plan (ESPP)\nEmployees can contribute up to 15% of net salary to purchase company common stock at a 15% discount to the lower of the offering date or purchase date market value in 6-month offering periods."
+      ],
+      "ground_truth_answer": "Employees receive a 15% discount to the lower of the offering date or purchase date market value.",
+      "generated_answer": "Employees receive a **15\u202f% discount** on the purchase price of company common stock under the Employee Stock Purchase Plan (ESPP).\u202fThe discount is applied to the lower of the offering\u2011date or purchase\u2011date market value for each 6\u2011month offering period.\u202f(See Chapter\u202f9.6, \u201cEmployee Stock Purchase Plan (ESPP)\u201d).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer (15% discount, applied to lower of offering or purchase date market value, 6\u2011month periods) are directly supported by the retrieved context with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's query by stating the exact discount employees receive under the ESPP."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim regarding the 15% discount and the valuation method."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the answer provides the correct information without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 32",
+        "Page 21",
+        "Page 28",
+        "Page 30"
+      ]
+    },
+    {
+      "id": "RAG_TC_017",
+      "query": "How many free confidential counseling sessions does an employee receive per year under the Employee Assistance Program (EAP)?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 8 (Page 28)",
+      "expected_chunks": [
+        "8.5 Employee Assistance Program (EAP)\nEmployees and immediate family receive up to 8 free counseling sessions per issue per year via Lyra Health."
+      ],
+      "ground_truth_answer": "Employees and immediate family members receive up to 8 free counseling sessions per issue per year via Lyra Health.",
+      "generated_answer": "An employee (and their immediate family) is entitled to **up to\u202f8 free confidential counseling sessions per issue each year** through the Employee Assistance Program (EAP)\u202f\u3010Excerpt\u202f1,\u202fPage\u202f28,\u202fSection\u202f8.5\u3011.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer are directly supported by Chunk 1 of the retrieved context; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about the number of free confidential counseling sessions per year."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim, including the quantity (8), scope (per issue per year), and eligibility (employee and immediate family)."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the model provides the correct answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 28",
+        "Page 29",
+        "Page 5",
+        "Page 2"
+      ]
+    },
+    {
+      "id": "RAG_TC_018",
+      "query": "What are the rules and maximum annual allowance for graduate tuition assistance if I want to pursue a Master's degree?",
+      "category": "In-Scope Factual",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 8 (Page 29)",
+      "expected_chunks": [
+        "8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree programs (Computer Science, MBA) can apply for up to $5,250 in annual tuition reimbursement with a 1-year post-completion retention commitment."
+      ],
+      "ground_truth_answer": "After 2 years of continuous tenure, employees can apply for up to $5,250 in annual tuition reimbursement for relevant Master's degrees, subject to a 1-year post-completion retention commitment.",
+      "generated_answer": "**Graduate Tuition Assistance \u2013 Rules & Maximum Allowance**\n\n- **Eligibility**  \n  - Must be a **regular full\u2011time employee** with **at least 2\u202fyears of continuous tenure** at Nexa Technologies.  \n  - The degree must be a **relevant Master\u2019s program** (e.g., Computer Science or MBA).  \n\n- **Benefit Amount**  \n  - Employees can apply for **up to\u202f$5,250 per year** in tuition reimbursement.  \n\n- **Retention Requirement**  \n  - Recipients must commit to **remain employed for 1\u202fyear after completing the degree**; otherwise, repayment may be required.  \n\n*Source: Chapter\u202f8, Section\u202f8.8 \u2013 Graduate Tuition Assistance Program (Page\u202f29 of the HR manual).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 4,
+          "reasoning": "All core facts (2-year tenure, $5,250 limit, relevant Master's, 1-year retention) are directly supported by the retrieved context. The added detail that the employee must be \"regular full\u2011time\" is not explicitly stated in the tuition assistance passage, representing a minor extrapolation."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly addresses the user's request by outlining eligibility rules and the maximum annual allowance for graduate tuition assistance."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground\u2011truth statement in all key facts and does not introduce any contradictory information."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the model provides a complete answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 29",
+        "Page 28",
+        "Page 5",
+        "Page 41"
+      ]
+    },
+    {
+      "id": "RAG_TC_019",
+      "query": "How many hours of paid Volunteer Time Off (VTO) can an employee take each year?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 10 (Page 36)",
+      "expected_chunks": [
+        "10.7 Volunteer Time Off (VTO)\nNexa grants 16 hours (2 days) of paid Volunteer Time Off annually to participate in non-profit community initiatives and charitable events."
+      ],
+      "ground_truth_answer": "Nexa grants 16 hours (2 days) of paid Volunteer Time Off annually.",
+      "generated_answer": "Nexa grants **16\u202fhours of paid Volunteer Time Off (VTO) each year** (equivalent to 2 days).\u3010Excerpt\u202f1,\u202fPage\u202f36\u3011",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (16 hours annually, equivalent to 2 days) are directly supported by Chunk 1 of the retrieved context with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about the annual VTO hours, providing the exact figure without extraneous information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim: 16 hours (2 days) of paid VTO per year."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in-scope; the model correctly provides the answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 36",
+        "Page 33",
+        "Page 5",
+        "Page 14"
+      ]
+    },
+    {
+      "id": "RAG_TC_020",
+      "query": "How long can a departing employee continue medical coverage under COBRA?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 15 (Page 49)",
+      "expected_chunks": [
+        "15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14 days of termination, allowing medical coverage continuation for up to 18 months at group rates."
+      ],
+      "ground_truth_answer": "Medical coverage can be continued under COBRA for up to 18 months at group rates.",
+      "generated_answer": "A departing employee may continue medical coverage under COBRA for **up to\u202f18\u202fmonths** at the group rates (CHAPTER\u202f15, Section\u202f15.5).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (18 months, group rates, reference to Chapter 15 Section 15.5) are directly supported by the retrieved context with no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question about the duration of COBRA coverage, providing the exact timeframe."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim, conveying the same facts and conclusion."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the required information without any refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 49",
+        "Page 38",
+        "Page 34",
+        "Page 39"
+      ]
+    },
+    {
+      "id": "RAG_TC_021",
+      "query": "What is the standard mileage reimbursement rate for business travel in a personal vehicle?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 12 (Page 42)",
+      "expected_chunks": [
+        "12.5 Mileage Reimbursement for Personal Vehicles\nBusiness travel in personal vehicles is reimbursed at official IRS standard mileage rates (67 cents/mile in 2026), plus tolls and parking."
+      ],
+      "ground_truth_answer": "Business travel in personal vehicles is reimbursed at the IRS standard mileage rate of 67 cents per mile (plus tolls and parking).",
+      "generated_answer": "The policy states that business travel using a personal vehicle is reimbursed at the official IRS standard mileage rate of **$0.67 per mile** for the year\u202f2026\u3010Excerpt\u202f1,\u202fCHAPTER\u202f12\u202f\u00a712.5\u3011.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements in the answer (rate $0.67 per mile) are directly supported by the retrieved context; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's question by providing the exact mileage reimbursement rate."
+        },
+        "semantic_correctness": {
+          "score": 4,
+          "reasoning": "The answer matches the core fact (67 cents per mile) but omits the additional detail about tolls and parking included in the ground truth."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in scope and the answer provides the requested information without any unnecessary refusal."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 42",
+        "Page 40",
+        "Page 41",
+        "Page 29"
+      ]
+    },
+    {
+      "id": "RAG_TC_022",
+      "query": "What criteria must be met if a full-time employee wants to engage in outside employment or moonlighting?",
+      "category": "In-Scope Factual",
+      "difficulty": "Medium",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 4 (Page 13)",
+      "expected_chunks": [
+        "4.5 Outside Employment (Moonlighting) Rules\nFull-time employees may engage in secondary employment or freelance consulting only if it meets all the following criteria:\n\u2022 Does not interfere with job performance or primary work hours.\n\u2022 Does not utilize company hardware, software licenses, or confidential intellectual property.\n\u2022 Receives prior written approval from the VP of Engineering and People Operations."
+      ],
+      "ground_truth_answer": "Moonlighting is permitted only if it does not interfere with job performance/hours, does not use company hardware/software/IP, and receives prior written approval from the VP of Engineering and People Operations.",
+      "generated_answer": "A full\u2011time employee may take on secondary employment or freelance consulting **only if all three of the following conditions are satisfied** (Chapter\u202f4\u202f\u2013\u202f4.5 Outside Employment (Moonlighting) Rules):\n\n1. **No impact on primary duties** \u2013 the outside work must not interfere with the employee\u2019s job performance or primary work hours.  \n2. **No use of company resources** \u2013 the employee may not use Nexa\u2019s hardware, software licenses, or any confidential intellectual property for the secondary activity.  \n3. **Written pre\u2011approval required** \u2013 the employee must obtain prior written approval from **both** the Vice President of Engineering **and** People Operations.  \n\nAll three criteria must be met before the employee can engage in outside employment.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All three criteria listed in the answer are directly taken from Chunk 1 with no added or missing information."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's request by enumerating the exact criteria for moonlighting."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth statement word\u2011for\u2011word in meaning and detail."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope and the model correctly provides the answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 13",
+        "Page 5",
+        "Page 15",
+        "Page 14"
+      ]
+    },
+    {
+      "id": "RAG_TC_023",
+      "query": "Within how many days of trip completion must travel expenses be filed in Expensify before reimbursement is forfeited?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 12 (Page 42)",
+      "expected_chunks": [
+        "12.6 Expense Reporting Deadlines & Auditing\nExpense reports must be submitted in Expensify within 15 calendar days of trip conclusion. Late submissions beyond 30 days are subject to forfeiture of reimbursement."
+      ],
+      "ground_truth_answer": "Expense reports must be submitted within 15 calendar days of trip conclusion. Submissions delayed past 30 days are subject to forfeiture of reimbursement.",
+      "generated_answer": "Travel expenses must be submitted in Expensify **within\u202f15\u202fcalendar days** of the trip\u2019s conclusion.\u202fIf the expense report is not filed by **30\u202fdays** after the trip, reimbursement is forfeited.  \n\n*Reference: Chapter\u202f12, Section\u202f12.6 \u2013 \u201cExpense Reporting Deadlines & Auditing\u201d (Page\u202f42).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (15\u2011day filing deadline and 30\u2011day forfeiture) are directly supported by Chunk 1; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer precisely addresses the asked timeframe for filing and the forfeiture condition."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Matches the ground\u2011truth answer word\u2011for\u2011word; facts and numbers are identical."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Question is in\u2011scope; the model correctly provides the answer without refusing."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 42",
+        "Page 40",
+        "Page 33",
+        "Page 49"
+      ]
+    },
+    {
+      "id": "RAG_TC_024",
+      "query": "How many days of paid bereavement leave do employees receive for immediate family members versus extended family members?",
+      "category": "In-Scope Factual",
+      "difficulty": "Easy",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Chapter 11 (Page 39)",
+      "expected_chunks": [
+        "11.6 Bereavement Leave Policy\nEmployees are granted 5 consecutive days of paid bereavement leave for immediate family members (spouse, child, parent, sibling) and 3 days for extended family members."
+      ],
+      "ground_truth_answer": "Employees receive 5 consecutive days of paid leave for immediate family members (spouse, child, parent, sibling) and 3 days for extended family members.",
+      "generated_answer": "Employees receive **5 consecutive days of paid bereavement leave** for the death of an immediate family member (spouse, child, parent, or sibling) and **3 days of paid bereavement leave** for the death of an extended family member.  \n\n*Reference: Chapter\u202f11, Section\u202f11.6 \u2013 Bereavement Leave Policy (Page\u202f39).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All claims (5 days immediate, 3 days extended) are directly supported by Chunk 1 of the retrieved context with no extra or missing information."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's exact question, providing the precise numbers for both immediate and extended family members."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground truth verbatim, including the same figures and family definitions."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is in\u2011scope (false flag), and the model correctly provides the answer without any unnecessary refusal."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 39",
+        "Page 34",
+        "Page 38",
+        "Page 37"
+      ]
+    },
+    {
+      "id": "RAG_TC_025",
+      "query": "I am a full-time Senior Engineer resigning after 3 years. What is my required resignation notice period, what happens to my unvested RSUs, how many days of vacation payout am I capped at, and what is my COBRA election window?",
+      "category": "Multi-Hop Cross-Chapter",
+      "difficulty": "Extremely Hard",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Cross-Chapter (Ch 15, Ch 9, Ch 10)",
+      "expected_chunks": [
+        "15.1 Voluntary Resignation Notice Periods\n\u2022 Individual Contributors (IC1 - IC5): Minimum 30 calendar days notice.",
+        "9.5 Restricted Stock Units (RSUs) & Equity Grants\nStandard vesting schedule follows a 4-year cadence: 25% cliff at 12 months, followed by 6.25% quarterly vesting over the remaining 36 months.",
+        "10.1 Annual Vacation Accrual Rates\n\u2022 3 to 5 Years: 25 days per year (2.08 days/month, max accrual cap 37.5 days)",
+        "15.5 COBRA Health Coverage Continuation\nEligible departing employees receive COBRA continuation election packets within 14 days of termination, allowing medical coverage continuation for up to 18 months at group rates."
+      ],
+      "ground_truth_answer": "As an IC, you must provide 30 calendar days advance notice. Unvested RSUs are forfeited upon departure. Accrued vacation payout is capped at 37.5 days (for 3-5 years tenure). You will receive your COBRA continuation packet within 14 days of termination with up to 18 months of group coverage.",
+      "generated_answer": "**Resignation notice period**  \n- As a Senior Engineer you are classified as an Individual Contributor (IC).\u202fAccording to **Chapter\u202f15.1 \u2013 Voluntary Resignation Notice Periods**, Individual Contributors (IC1\u2011IC5) must give **a minimum of\u202f30\u202fcalendar days\u2019 written notice** to your manager and HR.\u202f\u3010Excerpt\u202f1 \u2013 Page\u202f48\u3011\n\n**Unvested RSUs**  \n- The excerpts provided do not contain any policy language about the treatment of unvested Restricted Stock Units (RSUs) upon resignation.  \n  *I cannot find information regarding this topic in the company HR policy handbook.*\n\n**Vacation payout cap**  \n- The handbook states that \u201cfinal wages and accrued, unused vacation balance are disbursed within\u202f10\u202fbusiness days\u201d (Chapter\u202f15.4), but it does **not specify a maximum number of vacation days that can be paid out**.  \n  *I cannot find information regarding this topic in the company HR policy handbook.*\n\n**COBRA election window**  \n- Per **Chapter\u202f15.5 \u2013 COBRA Health Coverage Continuation**, eligible departing employees receive their COBRA election packets **within\u202f14\u202fdays of termination**, giving you a 14\u2011day window to elect continuation coverage.\u202f\u3010Excerpt\u202f2 \u2013 Page\u202f49\u3011\n\n---\n\n**Summary**\n\n| Item | Policy Detail (as per handbook) |\n|------|---------------------------------|\n| Required notice period | 30 calendar days (Individual Contributor) \u2013 Chapter\u202f15.1 |\n| Unvested RSUs | Not addressed in the provided excerpts |\n| Vacation payout cap | Not addressed in the provided excerpts |\n| COBRA election window | 14 days from termination \u2013 Chapter\u202f15.5 |\n\nAll information is drawn directly from the cited sections of the Nexa Technologies HR Policy Manual.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 13 column 4 (char 713)"
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 13 column 4 (char 713)"
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 13 column 4 (char 713)"
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 13 column 4 (char 713)"
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 48",
+        "Page 49",
+        "Page 39",
+        "Page 2"
+      ]
+    },
+    {
+      "id": "RAG_TC_026",
+      "query": "Compare the specific annual dollar reimbursement limits for the home office setup, the monthly wellness stipend, the annual learning budget, and the graduate tuition assistance program.",
+      "category": "Multi-Hop Cross-Chapter",
+      "difficulty": "Extremely Hard",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Cross-Chapter (Ch 5 & Ch 8)",
+      "expected_chunks": [
+        "5.4 Remote Workstation & Ergonomic Standards\nA one-time home office setup reimbursement of up to $1,000 is available for desks, ergonomic chairs, and external monitors.",
+        "8.6 Monthly Wellness Stipend\nEmployees receive a tax-free stipend of $100 per month ($1,200 annually) via Expensify.",
+        "8.7 Professional Development Allowance\nEach regular full-time employee is allocated an annual Learning & Development budget of $1,500.",
+        "8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree programs (Computer Science, MBA) can apply for up to $5,250 in annual tuition reimbursement."
+      ],
+      "ground_truth_answer": "The limits are: Home office setup: $1,000 (one-time); Wellness stipend: $100/month ($1,200/year); Learning & Development budget: $1,500/year; Graduate Tuition Assistance: up to $5,250/year.",
+      "generated_answer": "**Annual dollar limits (as stated in the Nexa Technologies HR manual)**  \n\n| Benefit / Program | Annual reimbursement limit | Source |\n|-------------------|---------------------------|--------|\n| **Home\u2011office setup** | *No information provided in the excerpts.* | \u2014 |\n| **Monthly Wellness Stipend** | **$1,200 per year** (\u202f$100\u202f\u00d7\u202f12\u202fmonths\u202f) | CHAPTER\u202f8, \u00a78.6 \u2013 \u201cMonthly Wellness Stipend\u201d |\n| **Learning & Development (Professional Development Allowance)** | **$1,500 per year** | CHAPTER\u202f8, \u00a78.7 \u2013 \u201cProfessional Development Allowance\u201d |\n| **Graduate Tuition Assistance Program** | **Up to $5,250 per year** (subject to a 1\u2011year post\u2011completion retention commitment) | CHAPTER\u202f8, \u00a78.8 \u2013 \u201cGraduate Tuition Assistance Program\u201d |\n\n**Summary**\n\n- The wellness stipend totals **$1,200 annually**.  \n- The learning budget provides **$1,500 annually**.  \n- The graduate tuition assistance can reimburse **up to $5,250 annually**.  \n- The policy excerpts do **not contain any detail** about a home\u2011office setup reimbursement limit, so that information cannot be provided from the current handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 5,\n    \"reasoning\": \"All stated figures (wellness stipend $1,200, learning budget $1,500, tuition assistance $5,250) are..."
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 5,\n    \"reasoning\": \"All stated figures (wellness stipend $1,200, learning budget $1,500, tuition assistance $5,250) are..."
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 5,\n    \"reasoning\": \"All stated figures (wellness stipend $1,200, learning budget $1,500, tuition assistance $5,250) are..."
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 5,\n    \"reasoning\": \"All stated figures (wellness stipend $1,200, learning budget $1,500, tuition assistance $5,250) are..."
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 28",
+        "Page 29",
+        "Page 5",
+        "Page 2"
+      ]
+    },
+    {
+      "id": "RAG_TC_027",
+      "query": "Can fixed-term interns or fixed-term contractors claim statutory overtime at 1.5x regular pay, and do they qualify for the 4-week sabbatical after completing milestones?",
+      "category": "Classification Disambiguation",
+      "difficulty": "Extremely Hard",
+      "is_out_of_scope_or_false": false,
+      "expected_behavior": "Answer from Context",
+      "chapter": "Cross-Chapter (Ch 2 & Ch 10)",
+      "expected_chunks": [
+        "2.2 Exempt vs. Non-Exempt Classifications\n\u2022 Non-Exempt Employees: Hourly or salaried employees entitled to statutory overtime pay for hours worked beyond 40 hours in a workweek.",
+        "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave."
+      ],
+      "ground_truth_answer": "Non-exempt interns and fixed-term staff are eligible for overtime at 1.5x for hours over 40. However, they are NOT eligible for the 4-week paid sabbatical, which strictly requires 5 consecutive years of regular full-time service.",
+      "generated_answer": "**Overtime eligibility**\n\n- The handbook defines **Non\u2011Exempt Employees** as \u201chourly or salaried employees entitled to statutory overtime pay for hours worked beyond 40\u202fhours in a workweek\u201d (Chapter\u202f2, \u00a72.2).  \n- Fixed\u2011Term / Temporary hires and Interns are listed separately under **Classification of Employment Status** (Chapter\u202f2, \u00a72.1) but the policy does **not** state whether they are classified as exempt or non\u2011exempt, nor does it grant them overtime rights.  \n- Because the manual provides no explicit provision that fixed\u2011term interns or fixed\u2011term contractors are non\u2011exempt, there is no basis in the policy to claim statutory overtime at 1.5\u202f\u00d7\u202fregular pay.\n\n**Sabbatical eligibility**\n\n- Sabbatical Leave is available only to employees who have completed **five (5) consecutive years of full\u2011time service** (Chapter\u202f10, \u00a710.6).  \n- Fixed\u2011Term / Temporary workers are hired for a specific milestone or period not exceeding 12\u202fmonths, and Interns are described as \u201cstudents participating in structured learning programs\u201d (Chapter\u202f2, \u00a72.1). Neither category meets the \u201cfull\u2011time, five\u2011year\u201d service requirement.  \n\n**Conclusion**\n\n- The HR manual does **not** provide for statutory overtime (1.5\u202f\u00d7\u202fpay) for fixed\u2011term interns or fixed\u2011term contractors.  \n- Fixed\u2011term interns or contractors are **not eligible** for the 4\u2011week fully paid sabbatical, as the sabbatical entitlement applies only to employees with five consecutive years of full\u2011time service.  \n\n*References: Chapter\u202f2 (Employment Categories & Classification), Chapter\u202f10 (\u00a710.6 Sabbatical Leave Eligibility), Chapter\u202f5 (\u00a75.8 Overtime Rates).*",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: ..."
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: ..."
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: ..."
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: ..."
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 5",
+        "Page 36",
+        "Page 17",
+        "Page 38"
+      ]
+    },
+    {
+      "id": "RAG_TC_028",
+      "query": "What is Nexa's pet insurance coverage policy, and how do I submit claims for veterinary visits and pet vaccinations?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding pet insurance or veterinary claims in the company HR policy handbook.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "The answer correctly states that no information is found, which aligns with the retrieved context that lacks any pet insurance details."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly addresses the user's request by indicating the absence of relevant policy information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The generated answer matches the ground truth answer in meaning, confirming that no pet insurance information is available."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Given the out-of-scope flag, the answer appropriately refuses by stating the information is not found, without hallucinating any policy details."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 26",
+        "Page 50",
+        "Page 19"
+      ]
+    },
+    {
+      "id": "RAG_TC_029",
+      "query": "How do I claim reimbursement for purchasing Ethereum or Bitcoin for company gas fees in Expensify?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding cryptocurrency reimbursements or gas fee claims in the company HR policy handbook.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "The answer correctly states that no information is found, which aligns with the retrieved context that lacks any mention of cryptocurrency reimbursements."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly addresses the user's query by indicating the absence of relevant policy information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The generated answer matches the ground truth meaningfully, conveying the same inability to locate policy guidance."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Given the out-of-scope/false premise flag, the answer appropriately informs the user that the topic is not covered, without hallucinating or refusing unnecessarily."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 42",
+        "Page 40",
+        "Page 41",
+        "Page 50"
+      ]
+    },
+    {
+      "id": "RAG_TC_030",
+      "query": "Is it true that full-time employees can take a 6-month paid sabbatical after working at Nexa for only 6 months?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / Disprove False Claim",
+      "chapter": "Chapter 10 (Page 36)",
+      "expected_chunks": [
+        "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave in addition to standard annual PTO."
+      ],
+      "ground_truth_answer": "No, that is false. Sabbatical leave is 4 weeks (not 6 months) and requires completing five (5) consecutive years of full-time service, not 6 months.",
+      "generated_answer": "No. According to the HR manual, Sabbatical Leave is only available **after completing five (5) consecutive years of full\u2011time service**, and the entitlement is a **4\u2011week fully paid sabbatical** (see Chapter\u202f10, Section\u202f10.6, page\u202f36). There is no provision for a six\u2011month paid sabbatical after just six months of employment.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements about sabbatical eligibility and duration are directly supported by the retrieved policy text; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's yes/no question about a 6\u2011month paid sabbatical after six months of service."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The response matches the ground\u2011truth answer exactly in facts and conclusion."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question contains a false premise; the answer correctly disproves it using handbook rules without refusing unnecessarily."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 36",
+        "Page 33",
+        "Page 38",
+        "Page 50"
+      ]
+    },
+    {
+      "id": "RAG_TC_031",
+      "query": "What is the monthly childcare stipend amount provided to employees with infants under 2 years old?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding a monthly direct childcare stipend in the company HR policy handbook.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "The answer correctly states that no information is found, which aligns with the retrieved context that contains no childcare stipend details."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The response directly addresses the user's query by indicating the absence of the requested information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The generated answer matches the ground truth answer exactly, confirming that no childcare stipend information is available."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Given the out-of-scope/false premise flag, the answer appropriately refuses by stating the information is not found, without hallucinating."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 37",
+        "Page 50",
+        "Page 28",
+        "Page 29"
+      ]
+    },
+    {
+      "id": "RAG_TC_032",
+      "query": "Can I bring my dog or cat to work on Fridays under the office pet-friendly policy?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding an office pet-friendly policy in the company HR policy handbook.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "The answer only states that no information is found, which aligns with the retrieved context that contains no pet policy."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly addresses the user's query by indicating the lack of relevant policy information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Matches the ground truth answer word\u2011for\u2011word in meaning, confirming no pet\u2011friendly policy is documented."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Correctly handles the out\u2011of\u2011scope/false premise by politely stating the information is not found without fabricating a rule."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 15",
+        "Page 35",
+        "Page 14",
+        "Page 46"
+      ]
+    },
+    {
+      "id": "RAG_TC_033",
+      "query": "Does Nexa provide an annual company car lease allowance of $10,000 for senior engineers?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding a company car lease allowance in the company HR policy handbook.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kq78189de3ks074k0ps3hbqa` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5251, Requested 2799. Please try again in 375ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kq78189de3ks074k0ps3hbqa` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5251, Requested 2799. Please try again in 375ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kq78189de3ks074k0ps3hbqa` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5251, Requested 2799. Please try again in 375ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kq78189de3ks074k0ps3hbqa` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5251, Requested 2799. Please try again in 375ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 32",
+        "Page 18",
+        "Page 25",
+        "Page 50"
+      ]
+    },
+    {
+      "id": "RAG_TC_034",
+      "query": "Can fixed-term interns receive a $5,000 relocation bonus and 100% graduate tuition assistance on their first day?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / Disprove False Claim",
+      "chapter": "Chapter 8 (Page 29)",
+      "expected_chunks": [
+        "8.8 Graduate Tuition Assistance Program\nAfter 2 years of continuous tenure, employees pursuing relevant Master degree programs (Computer Science, MBA) can apply for up to $5,250 in annual tuition reimbursement."
+      ],
+      "ground_truth_answer": "No, that is false. Tuition assistance requires at least 2 years of continuous full-time tenure, and there is no relocation bonus policy mentioned for fixed-term interns.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reasoning\": \"The answer claims no information is found, but the retrieved context contains relevant policies about tuition assistance and no relocation bonus..."
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reasoning\": \"The answer claims no information is found, but the retrieved context contains relevant policies about tuition assistance and no relocation bonus..."
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reasoning\": \"The answer claims no information is found, but the retrieved context contains relevant policies about tuition assistance and no relocation bonus..."
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Failed to parse LLM judge response as JSON: {\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reasoning\": \"The answer claims no information is found, but the retrieved context contains relevant policies about tuition assistance and no relocation bonus..."
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 29",
+        "Page 21",
+        "Page 5",
+        "Page 50"
+      ]
+    },
+    {
+      "id": "RAG_TC_035",
+      "query": "What is the policy for expensing personal alcohol purchases during personal weekend travel using the corporate card?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / Disprove False Claim",
+      "chapter": "Chapter 12 (Page 41)",
+      "expected_chunks": [
+        "12.4 Daily Meals & Incidentals Per Diem (M&IE)\nAlcohol is only reimbursable during approved client dinners."
+      ],
+      "ground_truth_answer": "Personal alcohol during weekend travel is non-reimbursable. Under company policy, alcohol is strictly only reimbursable during pre-approved business client dinners.",
+      "generated_answer": "Based on the travel\u2011and\u2011expense rules in **Chapter\u202f12, Section\u202f12.4 (Daily Meals & Incidentals Per Diem)**:\n\n- **Alcohol is only reimbursable during approved client dinners.**  \n- There is no provision that permits reimbursement (or corporate\u2011card charging) for alcohol purchased on personal trips, such as a weekend travel itinerary that is not a client\u2011related dinner.\n\nTherefore, personal alcohol purchases made during a personal weekend trip cannot be expensed or charged to the corporate card under the Nexa Technologies HR policy. (See Chapter\u202f12, Section\u202f12.4.)",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements directly reflect the retrieved policy text; no hallucinations or unsupported claims."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's specific query about expensing personal alcohol on a weekend trip."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The answer matches the ground\u2011truth response exactly in meaning and conclusion."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Given the out\u2011of\u2011scope/false\u2011premise flag, the model correctly disproves the premise using the handbook rule rather than hallucinating or refusing vaguely."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 41",
+        "Page 40",
+        "Page 12",
+        "Page 35"
+      ]
+    },
+    {
+      "id": "RAG_TC_036",
+      "query": "Can I claim reimbursement for gaming consoles and video games under the home office ergonomic budget?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Chapter 5 (Page 15)",
+      "expected_chunks": [
+        "5.4 Remote Workstation & Ergonomic Standards\nA one-time home office setup reimbursement of up to $1,000 is available for desks, ergonomic chairs, and external monitors."
+      ],
+      "ground_truth_answer": "No, gaming consoles and video games are not eligible for reimbursement. The home office setup budget of up to $1,000 strictly covers desks, ergonomic chairs, and external monitors.",
+      "generated_answer": "Based on the policies in the HR manual, the home\u2011office ergonomic reimbursement is limited to **\u201cdesks, ergonomic chairs, and external monitors\u201d** with a one\u2011time ceiling of **$1,000** (see **Chapter\u202f5, Section\u202f5.4 \u2013 Remote Workstation & Ergonomic Standards**).\n\nGaming consoles and video games are not listed among the eligible items for this reimbursement. Therefore, you cannot claim those expenses under the home\u2011office ergonomic budget.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements about the $1,000 reimbursement and eligible items are directly supported by Chunk 4; no hallucinations."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's query, clearly stating that gaming consoles and video games cannot be claimed."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The response matches the ground truth verbatim regarding ineligibility and the items covered by the budget."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question is flagged as false premise; the answer correctly disproves the claim using policy references without refusing unnecessarily."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 28",
+        "Page 41",
+        "Page 42",
+        "Page 15"
+      ]
+    },
+    {
+      "id": "RAG_TC_037",
+      "query": "What is the procedure for requesting a 100% remote work arrangement from Antarctica or an unapproved international tax jurisdiction?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Chapter 5 (Page 13)",
+      "expected_chunks": [
+        "5.1 Remote Work Eligibility & Geographic Constraints\nEmployees may only work remotely from approved legal and tax jurisdictions where the company has an established legal entity."
+      ],
+      "ground_truth_answer": "The policy strictly disallows working from unapproved jurisdictions. Employees may only work remotely from approved legal and tax jurisdictions where the company has an established legal entity.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 5 column 4 (char 212)"
+        },
+        "answer_relevancy": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 5 column 4 (char 212)"
+        },
+        "semantic_correctness": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 5 column 4 (char 212)"
+        },
+        "refusal_accuracy": {
+          "score": 1,
+          "reasoning": "Judge error: Expecting ',' delimiter: line 5 column 4 (char 212)"
+        },
+        "overall_score_avg": 1.0,
+        "verdict": "FAIL"
+      },
+      "retrieved_context_sources": [
+        "Page 50",
+        "Page 1",
+        "Page 12",
+        "Page 19"
+      ]
+    },
+    {
+      "id": "RAG_TC_038",
+      "query": "Can an employee take 12 months of fully paid personal sabbatical after 1 year of employment?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / Disprove False Claim",
+      "chapter": "Chapter 10 (Page 36)",
+      "expected_chunks": [
+        "10.6 Sabbatical Leave Eligibility\nAfter completing five (5) consecutive years of full-time service, employees are entitled to take a 4-week fully paid Sabbatical Leave."
+      ],
+      "ground_truth_answer": "No, this is false. Sabbatical leave is only 4 weeks long (not 12 months) and requires 5 consecutive years of full-time service (not 1 year).",
+      "generated_answer": "No. According to the Nexa Technologies HR manual, a Sabbatical Leave is only available **after completing five (5) consecutive years of full\u2011time service**, and the entitlement is **a 4\u2011week fully paid sabbatical** (Chapter\u202f10, Section\u202f10.6). The policy does not provide for a 12\u2011month fully paid sabbatical, nor does it allow any sabbatical after just one year of employment.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "All statements (5-year eligibility, 4-week duration, no 12\u2011month option) are directly supported by Chunk\u202f1 of the retrieved policy."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "The answer directly addresses the user's false premise, providing a clear 'No' and the correct policy details."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "The response matches the ground\u2011truth answer exactly in facts and conclusion."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "The question contains a false premise; the answer correctly disproves it using handbook rules without refusing unnecessarily."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 36",
+        "Page 38",
+        "Page 33",
+        "Page 34"
+      ]
+    },
+    {
+      "id": "RAG_TC_039",
+      "query": "What is the reimbursement limit for purchasing lottery tickets during team building events?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / State Not Found",
+      "chapter": "Out of Scope",
+      "expected_chunks": [],
+      "ground_truth_answer": "I cannot find information regarding lottery ticket reimbursements in the company HR policy handbook, as gambling expenses are not covered.",
+      "generated_answer": "I cannot find information regarding this topic in the company HR policy handbook.",
+      "judge_results": {
+        "faithfulness": {
+          "score": 5,
+          "reasoning": "The answer states no information is found, which aligns with the retrieved context that contains no lottery ticket policy."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly addresses the user query by indicating the policy does not contain relevant information."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Matches the ground truth answer that the policy does not cover lottery ticket reimbursements."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Correctly refuses to provide a reimbursement limit by stating the information is not found, appropriate for an out\u2011of\u2011scope/false premise question."
+        },
+        "overall_score_avg": 5.0,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 41",
+        "Page 12",
+        "Page 21",
+        "Page 40"
+      ]
+    },
+    {
+      "id": "RAG_TC_040",
+      "query": "Are employees allowed to smoke or vape inside conference rooms if all attendees agree?",
+      "category": "False Premise & Out-of-Scope",
+      "difficulty": "Hard",
+      "is_out_of_scope_or_false": true,
+      "expected_behavior": "Refusal / Disprove False Claim",
+      "chapter": "Chapter 13 (Page 43)",
+      "expected_chunks": [
+        "13.3 Smoke-Free and Drug-Free Workplace\nAll company premises, including meeting rooms, private offices, hallways, and restrooms, are strictly 100% smoke-free and vape-free without exception."
+      ],
+      "ground_truth_answer": "No, smoking and vaping are strictly prohibited inside all company premises, including conference rooms, without exception regardless of attendee agreement.",
+      "generated_answer": "No. The policy explicitly prohibits smoking and vaping anywhere on company campuses, which includes all interior spaces such as conference rooms. This prohibition applies regardless of any agreement among attendees.\n\n**Citation:** Chapter\u202f14.2 \u2013 \u201cSmoking and vaping are prohibited on all company campuses.\u201d (Excerpt\u202f1, Page\u202f46).",
+      "judge_results": {
+        "faithfulness": {
+          "score": 4,
+          "reasoning": "The answer correctly cites the policy that smoking and vaping are prohibited on all company campuses, matching the retrieved context. It adds a minor inference that this includes conference rooms, which is reasonable but not explicitly stated."
+        },
+        "answer_relevancy": {
+          "score": 5,
+          "reasoning": "Directly answers the user's question, stating that smoking/vaping is not allowed even if attendees agree."
+        },
+        "semantic_correctness": {
+          "score": 5,
+          "reasoning": "Exactly matches the ground truth statement that smoking and vaping are strictly prohibited in all premises, including conference rooms, without exception."
+        },
+        "refusal_accuracy": {
+          "score": 5,
+          "reasoning": "Correctly identifies the false premise and explicitly disproves it using the handbook rule, without refusing unnecessarily."
+        },
+        "overall_score_avg": 4.75,
+        "verdict": "PASS"
+      },
+      "retrieved_context_sources": [
+        "Page 46",
+        "Page 47",
+        "Page 11",
+        "Page 9"
+      ]
+    }
+  ]
+}

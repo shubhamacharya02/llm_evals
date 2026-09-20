@@ -37,3 +37,6 @@ dist/
 data/
 .deepeval/
 
+# Log Files
+*.log
+evals/logs/
