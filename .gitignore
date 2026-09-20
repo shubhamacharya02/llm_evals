@@ -32,3 +32,8 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+
+# Local Data & Vector Store
+data/
+.deepeval/
+

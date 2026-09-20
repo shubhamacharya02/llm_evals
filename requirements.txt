@@ -8,3 +8,6 @@ langchain-community
 langchain-huggingface
 python-dotenv
 deepeval
+python-multipart
+chromadb
+langchain-chroma
